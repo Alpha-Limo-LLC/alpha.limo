@@ -3,13 +3,13 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./styles/styles.css";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const notoSans = Noto_Sans({
+  variable: "--font-noto-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const notoMono = Noto_Sans_Mono({
+  variable: "--font-noto-sans-mono",
   subsets: ["latin"],
 });
 

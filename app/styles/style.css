@@ -24,8 +24,8 @@
     --tracking-tight: -0.025em;
     --default-transition-duration: 150ms;
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    --default-font-family: var(--font-geist-sans);
-    --default-mono-font-family: var(--font-geist-mono);
+    --default-font-family: var(--font-noto-sans);
+    --default-mono-font-family: var(--font-noto-mono);
   }
 }
 @layer base {
@@ -258,7 +258,7 @@
     text-align: center;
   }
   .font-sans {
-    font-family: var(--font-geist-sans);
+    font-family: var(--font-noto-sans);
   }
   .text-3xl {
     font-size: var(--text-3xl);
