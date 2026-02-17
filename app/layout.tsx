@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
+import Icons from "./icons";
 import "./styles/style.css";
 import "./globals.css";
 
@@ -32,6 +33,7 @@ export default function RootLayout({
       <body
         className={`${notoSans.variable} ${notoMono.variable} antialiased`}
       >
+        <Icons />
         {children}
       </body>
     </html>
