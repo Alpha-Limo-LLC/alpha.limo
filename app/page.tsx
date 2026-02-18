@@ -1,7 +1,6 @@
 import Image from "next/image";
 import Alpha_Logo from "../public/assets/images/logo.svg";
 
-
 export default function Alpha_Init() {
   return (
     <div className="flex justify-center align-center items-center w-full h-full bg-white">
@@ -9,6 +8,7 @@ export default function Alpha_Init() {
         <Image
           src={Alpha_Logo}
           alt="Alpha Limo LLC"
+          loading="eager"
           width={250}
           height={250}
           priority
