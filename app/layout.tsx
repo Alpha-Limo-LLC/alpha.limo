@@ -33,7 +33,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${notoSans.variable} ${notoMono.variable} antialiased`}
+        className={`bg-white ${notoSans.variable} ${notoMono.variable} antialiased`}
       >
         <Icons />
         {children}
