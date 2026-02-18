@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
 import Icons from "./icons";
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/next';
 import "./styles/style.css";
 import "./globals.css";
 
@@ -35,6 +37,8 @@ export default function RootLayout({
       >
         <Icons />
         {children}
+        <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   );
