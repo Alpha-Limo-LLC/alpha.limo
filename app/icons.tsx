@@ -17,7 +17,7 @@ export default function Icons() {
         <link rel="icon" type="image/png" href="/assets/icons/favicon-16x16.png" sizes="16x16" />
         <link rel="icon" type="image/png" href="/assets/icons/favicon-128.png" sizes="128x128" />
         <meta name="application-name" content="Alpha Limo LLC"/>
-        <meta name="msapplication-TileColor" content="#fff" />
+        <meta name="msapplication-TileColor" content="#ffffff" />
         <meta name="msapplication-TileImage" content="/assets/icons/mstile-144x144.png" />
         <meta name="msapplication-square70x70logo" content="/assets/icons/mstile-70x70.png" />
         <meta name="msapplication-square150x150logo" content="/assets/icons/mstile-150x150.png" />

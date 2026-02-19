@@ -1,13 +1,13 @@
-import { AppRouterCacheProvider } from '@mui/material-nextjs/v16-appRouter';
 import type { Metadata } from "next";
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v16-appRouter';
 import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
 import { ThemeProvider } from '@mui/material/styles';
 import Theme from './theme';
 import Icons from "./icons";
-import { SpeedInsights } from '@vercel/speed-insights/next';
-import { Analytics } from '@vercel/analytics/next';
 import "./styles/style.css";
 import "./globals.css";
+import { SpeedInsights } from '@vercel/speed-insights/next';
+import { Analytics } from '@vercel/analytics/next';
 
 const notoSans = Noto_Sans({
   variable: "--font-noto-sans",

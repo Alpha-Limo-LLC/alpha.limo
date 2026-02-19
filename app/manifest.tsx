@@ -7,8 +7,8 @@ export default function manifest(): MetadataRoute.Manifest {
     description: "Alpha Limo LLC is a premier transportation service provider offering luxury and reliable limo services for all occasions.",
     start_url: '/',
     display: 'standalone',
-    background_color: '#fff',
-    theme_color: '#fff',
+    background_color: '#ffffff',
+    theme_color: '#ffffff',
     icons: [
       {
         "src": "assets/icons/icon-48x48.png",
