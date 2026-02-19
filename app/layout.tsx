@@ -1,6 +1,8 @@
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v16-appRouter';
 import type { Metadata } from "next";
 import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
+import { ThemeProvider } from '@mui/material/styles';
+import Theme from './theme';
 import Icons from "./icons";
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/next';
@@ -34,11 +36,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`bg-white ${notoSans.variable} ${notoMono.variable} antialiased`}
+        className={`${notoSans.variable} ${notoMono.variable} antialiased`}
       >
         <Icons />
-        <AppRouterCacheProvider>
-          {children}
+        <AppRouterCacheProvider options={{ enableCssLayer: true }}>
+          <ThemeProvider theme={Theme}>
+            {children}
+          </ThemeProvider>
         </AppRouterCacheProvider>
         <SpeedInsights />
         <Analytics />
