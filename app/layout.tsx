@@ -1,3 +1,4 @@
+import { AppRouterCacheProvider } from '@mui/material-nextjs/v16-appRouter';
 import type { Metadata } from "next";
 import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
 import Icons from "./icons";
@@ -36,7 +37,9 @@ export default function RootLayout({
         className={`bg-white ${notoSans.variable} ${notoMono.variable} antialiased`}
       >
         <Icons />
-        {children}
+        <AppRouterCacheProvider>
+          {children}
+        </AppRouterCacheProvider>
         <SpeedInsights />
         <Analytics />
       </body>
