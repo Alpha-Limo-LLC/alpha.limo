@@ -1,12 +1,6 @@
 import Image from "next/image";
 import Alpha_Logo from "../public/assets/images/logo.svg";
-import { generateText } from 'ai';
-import { openai } from '@ai-sdk/openai';
-
-const { text } = await generateText({
-  model: openai('gpt-5-mini'),
-  prompt: 'Generate one short quote for a limousine service',
-});
+import generateSlogan  from "./ai";
 
 export default function Alpha_Init() {
   return (
@@ -24,7 +18,7 @@ export default function Alpha_Init() {
           <h1 className="text-center text-5xl font-extrabold mt-5 text-black">Alpha Limo</h1>
         </div>
         <div>
-          <h3 className="text-center text-md mt-5 text-black-500">{text}</h3>
+          <h3 className="text-center text-md mt-5 text-black-500">{generateSlogan()}</h3>
         </div>
         <div className="text-center static bottom-0 text-sm mt-5 p-5">
           <a className="text-normal-500 hover:none text-black" href="https://github.com/Alpha-Limo-LLC/alpha.limo" target="_blank">
