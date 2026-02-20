@@ -1,6 +1,10 @@
+"use client";
 import Image from "next/image";
 import Alpha_Logo from "../public/assets/images/logo.svg";
 import generateSlogan  from "./ai";
+
+export const dynamic = 'force-dynamic';
+export const maxDuration = 30;
 
 export default function Alpha_Init() {
   return (
