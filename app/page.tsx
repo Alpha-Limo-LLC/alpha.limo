@@ -23,7 +23,7 @@ export default function Alpha_Init() {
           <h1 className="text-center text-5xl font-extrabold mt-5 text-black">Alpha Limo</h1>
         </div>
         <div>
-          <h3 className="text-center text-md mt-5 p-5 text-black-500">{text}</h3>
+          <h3 className="text-center text-md mt-5 text-black-500">{text}</h3>
         </div>
         <div className="text-center static bottom-0 text-sm mt-5 p-5">
           <a className="text-normal-500 hover:none text-black" href="https://github.com/Alpha-Limo-LLC/alpha.limo" target="_blank">
