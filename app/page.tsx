@@ -5,7 +5,7 @@ import { openai } from '@ai-sdk/openai';
 
 const { text } = await generateText({
   model: openai('gpt-5-mini'),
-  prompt: 'Generate a short, catchy quote for a limousine service',
+  prompt: 'Generate one short quote for a limousine service',
 });
 
 export default function Alpha_Init() {
