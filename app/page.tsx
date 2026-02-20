@@ -1,4 +1,3 @@
-"use client";
 import Image from "next/image";
 import Alpha_Logo from "../public/assets/images/logo.svg";
 import generateSlogan  from "./ai";
