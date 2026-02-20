@@ -1,5 +1,4 @@
 import { generateText } from 'ai';
-import { openai } from '@ai-sdk/react';
 
 async function generateSlogan() {
   try {
