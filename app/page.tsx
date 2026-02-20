@@ -1,9 +1,9 @@
 import Image from "next/image";
 import Alpha_Logo from "../public/assets/images/logo.svg";
-import { streamText } from 'ai';
+import { generateText } from 'ai';
 import { openai } from '@ai-sdk/openai';
 
-const { text } = await streamText({
+const { text } = await generateText({
   model: openai('gpt-4.1-mini'),
   prompt: 'Generate a short, catchy quote for a limousine service',
 });
