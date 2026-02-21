@@ -1,9 +1,7 @@
 import Image from "next/image";
 import Alpha_Logo from "../public/assets/images/logo.svg";
 import generateSlogan  from "./ai";
-
-export const dynamic = 'force-dynamic';
-export const maxDuration = 30;
+import Fade from '@mui/material/Fade';
 
 export default function Alpha_Init() {
   return (
@@ -21,7 +19,11 @@ export default function Alpha_Init() {
           <h1 className="text-center text-5xl font-extrabold mt-5 text-black">Alpha Limo</h1>
         </div>
         <div>
-          <h3 className="text-center text-md mt-5 text-black">{generateSlogan()}</h3>
+          <Fade in={true} timeout={100}>
+            <h3 className="text-center text-md mt-5 text-black">
+              {generateSlogan()}
+            </h3>
+          </Fade>
         </div>
         <div className="text-center static bottom-0 text-sm mt-5 p-5">
           <a className="text-normal hover:none text-black" href="https://github.com/Alpha-Limo-LLC/alpha.limo" target="_blank">
