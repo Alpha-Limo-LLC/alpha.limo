@@ -24,7 +24,7 @@ export default function Alpha_Init() {
           <h3 className="text-center text-md mt-5 text-black">{generateSlogan()}</h3>
         </div>
         <div className="text-center static bottom-0 text-sm mt-5 p-5">
-          <a className="text-normal-500 hover:none text-black" href="https://github.com/Alpha-Limo-LLC/alpha.limo" target="_blank">
+          <a className="text-normal hover:none text-black" href="https://github.com/Alpha-Limo-LLC/alpha.limo" target="_blank">
             &copy; 2026 Alpha Limo LLC
           </a>
         </div>
