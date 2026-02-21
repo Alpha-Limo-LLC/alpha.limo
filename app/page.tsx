@@ -19,7 +19,7 @@ export default function Alpha_Init() {
           <h1 className="text-center text-5xl font-extrabold mt-5 text-black">Alpha Limo</h1>
         </div>
         <div>
-          <Fade in={true} timeout={100}>
+          <Fade in={true} timeout={500}>
             <h3 className="text-center text-md mt-5 text-black">
               {generateSlogan()}
             </h3>
