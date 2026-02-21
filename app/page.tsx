@@ -2,8 +2,10 @@ import Image from "next/image";
 import Alpha_Logo from "../public/assets/images/logo.svg";
 import generateSlogan  from "./ai";
 import Fade from '@mui/material/Fade';
+import Link from '@mui/material/Link';
 
 export default function Alpha_Init() {
+  const slogan = generateSlogan();
   return (
     <div className="flex justify-center align-center items-center w-full h-full bg-white">
       <main className="w-full h-full flex flex-col justify-center items-center my-50">
@@ -21,14 +23,14 @@ export default function Alpha_Init() {
         <div>
           <Fade in={true} timeout={500}>
             <h3 className="text-center text-md mt-5 text-black">
-              {generateSlogan()}
+              {slogan}
             </h3>
           </Fade>
         </div>
         <div className="text-center static bottom-0 text-sm mt-5 p-5">
-          <a className="text-normal hover:none text-black" href="https://github.com/Alpha-Limo-LLC/alpha.limo" target="_blank">
+          <Link className="text-normal no-underline hover:none visited:none text-black" href="https://github.com/Alpha-Limo-LLC/alpha.limo" target="_blank">
             &copy; 2026 Alpha Limo LLC
-          </a>
+          </Link>
         </div>
       </main>
     </div>
