@@ -1,5 +1,4 @@
 import config from "./config";
-import React from 'react';
 import Image from "next/image";
 import Logo from "../public/assets/images/logo.svg";
 import Slogan  from "./ai";
