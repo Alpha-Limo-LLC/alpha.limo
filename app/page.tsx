@@ -1,4 +1,5 @@
 import config from "./config";
+import React from 'react';
 import Image from "next/image";
 import Logo from "../public/assets/images/logo.svg";
 import Slogan  from "./ai";
@@ -33,7 +34,7 @@ export default function Alpha() {
         <div className="flex items-center mt-10">
           <Fade in={true} timeout={1000}>
             <h3 className="text-center text-md text-black">
-              {SLOGAN}
+              &quot;{SLOGAN}&quot;
             </h3>
           </Fade>
         </div>
