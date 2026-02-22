@@ -1,12 +1,20 @@
 {
+    // Site configuration
+
     "site_name_short": "Alpha Limo",
     "site_name_full": "Alpha Limo LLC",
     "site_year": 2026,
     "site_url": "https://github.com/Alpha-Limo-LLC/alpha.limo",
+
+    // ChatGPT configuration
+
     "chatgpt_model": "openai/gpt-4.1-mini",
     "chatgpt_stance": "You are a professional business owner. ",
     "chatgpt_motivation": "You write simple, clear, and concise content.",
     "chatgpt_prompt": "Generate one short quote for a limousine service",
+
+    // Meta configuration
+    
     "meta_title": "Alpha Limo LLC",
     "meta_description": "Alpha Limo LLC is a premier transportation service provider offering luxury and reliable limo services for all occasions. Experience comfort and style with our professional chauffeurs and top-notch vehicles.",
     "meta_keywords": "alpha limo, alpha limo llc, limo services",
