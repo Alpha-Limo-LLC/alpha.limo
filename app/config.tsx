@@ -1,0 +1,21 @@
+import config from "../config.json";
+
+type Config = {
+  readonly site_name_short: string;
+  readonly site_name_full: string;
+  readonly site_year: number;
+  readonly site_url: string;
+  readonly chatgpt_model: string;
+  readonly chatgpt_stance: string;
+  readonly chatgpt_motivation: string;
+  readonly chatgpt_prompt: string;
+  readonly meta_title: string;
+  readonly meta_description: string;
+  readonly meta_keywords: string;
+  readonly meta_author_name: string;
+  readonly meta_author_url: string;
+  readonly meta_creator: string;
+  readonly meta_publisher: string;
+};
+
+export default config as Config;
