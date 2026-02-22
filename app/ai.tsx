@@ -1,9 +1,6 @@
 import config from "./config";
 import { smoothStream, streamText } from 'ai';
 
-export const dynamic = 'force-dynamic';
-export const maxDuration = 30;
-
 async function generateSlogan() {
   try {
     const CHATGPT_MODEL = config.chatgpt_model;

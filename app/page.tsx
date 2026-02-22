@@ -5,6 +5,9 @@ import generateSlogan  from "./ai";
 import Fade from '@mui/material/Fade';
 import Link from "next/link";
 
+export const dynamic = 'force-dynamic';
+export const maxDuration = 30;
+
 export default function Alpha() {
   const ALPHA_FULL = config.site_name_full;
   const ALPHA_SHORT = config.site_name_short;
