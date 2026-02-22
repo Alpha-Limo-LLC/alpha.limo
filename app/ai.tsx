@@ -1,7 +1,7 @@
 import config from "./config";
 import { smoothStream, streamText } from 'ai';
 
-async function generateSlogan() {
+async function Slogan() {
   try {
     const CHATGPT_MODEL = config.chatgpt_model;
     const CHATGPT_STANCE = config.chatgpt_stance;
@@ -22,4 +22,4 @@ async function generateSlogan() {
   }
 }
 
-export default generateSlogan;
+export default Slogan;

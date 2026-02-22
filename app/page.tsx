@@ -1,7 +1,7 @@
 import config from "./config";
 import Image from "next/image";
 import Logo from "../public/assets/images/logo.svg";
-import generateSlogan  from "./ai";
+import Slogan  from "./ai";
 import Fade from '@mui/material/Fade';
 import Link from "next/link";
 
@@ -12,7 +12,7 @@ export default function Alpha() {
   const ALPHA_FULL = config.site_name_full;
   const ALPHA_SHORT = config.site_name_short;
   const ALPHA_YEAR = config.site_year;
-  const SLOGAN = generateSlogan();
+  const SLOGAN = Slogan();
   return (
     <div className="flex justify-center align-center items-center w-full h-full bg-white">
       <main className="w-full h-full flex flex-col justify-center items-center my-50">

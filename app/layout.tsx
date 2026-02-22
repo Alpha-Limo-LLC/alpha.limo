@@ -1,4 +1,4 @@
-import config from "./config";
+import Config from "./config";
 import Head from "next/head";
 import type { Metadata } from "next";
 import { AppRouterCacheProvider } from '@mui/material-nextjs/v16-appRouter';
