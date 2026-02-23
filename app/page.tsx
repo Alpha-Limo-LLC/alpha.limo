@@ -20,6 +20,7 @@ export default function Alpha() {
         <Image
           src={Logo}
           alt={ALPHA_FULL}
+          quality={100}
           loading="eager"
           width={250}
           height={250}

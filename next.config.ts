@@ -5,6 +5,7 @@ const nextConfig: NextConfig = {
   compress: true,
   reactStrictMode: false,
   images: {
+    qualities: [75, 100],
     localPatterns: [
       {
         pathname: '/assets/**',
