@@ -3,7 +3,7 @@ import Slogan  from "./ai";
 import Logo from "../public/assets/images/logo.svg";
 import Image from "next/image";
 import Link from "next/link";
-import Fade from '@mui/material/Fade';
+import Grow from '@mui/material/Grow';
 
 export const dynamic = 'force-dynamic';
 export const maxDuration = 60;
@@ -32,13 +32,13 @@ export default function Alpha() {
           </h1>
         </div>
         <div className="flex items-center mt-10">
-          <Fade
+          <Grow
             in={true}
             timeout={1000}>
             <h3 className="text-center text-md text-black">
               &ldquo;{SLOGAN}&rdquo;
             </h3>
-          </Fade>
+          </Grow>
         </div>
         <div className="text-center static bottom-0 text-sm mt-10">
           <Link
