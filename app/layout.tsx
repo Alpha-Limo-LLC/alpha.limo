@@ -2,7 +2,7 @@ import config from "./config";
 import type { Metadata } from "next";
 import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
 import { ThemeProvider } from '@mui/material/styles';
-import Theme from './theme';
+import Light from './theme';
 import Icons from "./icons";
 import "./styles/style.css";
 import "./globals.css";
@@ -39,7 +39,7 @@ export default function RootLayout({
         className={`${notoSans.variable} ${notoMono.variable} antialiased`}
       >
         <Icons />
-          <ThemeProvider theme={Theme} defaultMode="light">
+          <ThemeProvider theme={Light} defaultMode="light">
             {children}
           </ThemeProvider>
         <SpeedInsights />

@@ -1,8 +1,9 @@
 'use client';
 import { createTheme } from '@mui/material/styles';
 
-const Theme = createTheme({
+const Light = createTheme({
   colorSchemes: {
+    light: true,
     dark: false,
   },
   cssVariables: true,
@@ -14,4 +15,4 @@ const Theme = createTheme({
   },
 });
 
-export default Theme;
+export default Light;
