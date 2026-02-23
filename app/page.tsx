@@ -2,6 +2,7 @@ import config from "./config";
 import Slogan  from "./ai";
 import Logo from "../public/assets/images/logo.svg";
 import Image from "next/image";
+import { Paper } from '@mui/material';
 import { CssBaseline } from '@mui/material';
 import { grey } from '@mui/material/colors';
 import { Link } from '@mui/material';
@@ -19,6 +20,7 @@ export default function Alpha() {
   return (
     <div className="flex justify-center align-center w-full h-full">
       <CssBaseline />
+      <Paper elevation={3} square={true} />
       <main className="flex flex-col items-center my-50">
         <Image
           src={Logo}
