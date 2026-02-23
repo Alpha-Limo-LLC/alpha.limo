@@ -1,10 +1,14 @@
+import config from "./config";
 import type { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
+  const ALPHA_FULL = config.site_name_full;
+  const ALPHA_SHORT = config.site_name_short;
+  const ALPHA_DESCRIPTION = config.site_description;
   return {
-    name: 'Alpha Limo LLC',
-    short_name: 'Alpha Limo',
-    description: 'Alpha Limo LLC is a premier transportation service provider offering luxury and reliable limo services for all occasions.',
+    name: ALPHA_FULL,
+    short_name: ALPHA_SHORT,
+    description: ALPHA_DESCRIPTION,
     id: '/?source=pwa',
     start_url: '/?source=pwa',
     display: 'standalone',
@@ -13,7 +17,7 @@ export default function manifest(): MetadataRoute.Manifest {
     screenshots: [
       {
         "src": "assets/images/screenshot.png",
-        "sizes": "1920x1080",
+        "sizes": "1919×1079",
         "type": "image/png",
         "form_factor": "wide",
         "label": "Desktop screenshot"

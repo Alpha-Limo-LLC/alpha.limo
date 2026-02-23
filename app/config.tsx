@@ -5,6 +5,7 @@ type Config = {
   readonly site_name_full: string;
   readonly site_year: number;
   readonly site_url: string;
+  readonly site_description: string;
   readonly chatgpt_model: string;
   readonly chatgpt_stance: string;
   readonly chatgpt_motivation: string;
