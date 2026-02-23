@@ -5,7 +5,6 @@ const nextConfig: NextConfig = {
   compress: true,
   reactStrictMode: false,
   images: {
-    qualities: [75, 100],
     localPatterns: [
       {
         pathname: '/assets/images/**',
@@ -17,6 +16,9 @@ const nextConfig: NextConfig = {
 
 module.exports = {
   crossOrigin: 'anonymous',
+  images: {
+    qualities: [100, 75],
+  },
 }
 
 export default nextConfig;
