@@ -23,8 +23,6 @@
 # misc
 .DS_Store
 *.pem
-yarn.lock
-yarnrc.yml
 
 # debug
 npm-debug.log*
