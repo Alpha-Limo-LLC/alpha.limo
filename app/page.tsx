@@ -34,7 +34,7 @@ export default function Alpha() {
         <div className="flex items-center mt-10">
           <Grow
             in={true}
-            timeout={1000}>
+            timeout="auto">
             <h3 className="text-center text-md text-black">
               &ldquo;{SLOGAN}&rdquo;
             </h3>
