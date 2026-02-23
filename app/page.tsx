@@ -1,9 +1,9 @@
 import config from "./config";
-import Image from "next/image";
-import Logo from "../public/assets/images/logo.svg";
 import Slogan  from "./ai";
-import Fade from '@mui/material/Fade';
+import Logo from "../public/assets/images/logo.svg";
+import Image from "next/image";
 import Link from "next/link";
+import Fade from '@mui/material/Fade';
 
 export const dynamic = 'force-dynamic';
 export const maxDuration = 60;
