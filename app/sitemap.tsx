@@ -1,6 +1,6 @@
 import config from "./config";
 import type { MetadataRoute } from 'next'
- 
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const ALPHA_HOME = config.site_home;
   return [
