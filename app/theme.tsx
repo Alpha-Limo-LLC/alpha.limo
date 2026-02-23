@@ -9,6 +9,12 @@ const Light = createTheme({
   cssVariables: true,
   palette: {
     mode: 'light',
+    background: {
+      default: '#ffffff',
+    },
+    text: {
+      primary: '#000000',
+    },
   },
   typography: {
     fontFamily: 'var(--font-noto-sans), var(--font-noto-sans-mono), sans-serif',
