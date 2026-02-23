@@ -39,7 +39,7 @@ export default function RootLayout({
         className={`${notoSans.variable} ${notoMono.variable} antialiased`}
       >
         <Icons />
-          <ThemeProvider theme={Theme}>
+          <ThemeProvider theme={Theme} defaultMode="light">
             {children}
           </ThemeProvider>
         <SpeedInsights />
