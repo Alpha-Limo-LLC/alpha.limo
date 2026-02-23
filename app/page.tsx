@@ -21,10 +21,10 @@ export default function Alpha() {
           src={Logo}
           alt={ALPHA_FULL}
           quality={100}
+          preload={true}
           loading="eager"
           width={250}
           height={250}
-          priority
         ></Image>
         <div className="flex items-center gap-6 mt-10">
           <h1 className="text-center text-5xl font-extrabold text-black">
