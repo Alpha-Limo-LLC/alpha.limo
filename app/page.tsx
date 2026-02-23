@@ -36,7 +36,7 @@ export default function Alpha() {
             in={true}
             timeout={1000}>
             <h3 className="text-center text-md text-black">
-              &quot;{SLOGAN}&quot;
+              &ldquo;{SLOGAN}&rdquo;
             </h3>
           </Fade>
         </div>
