@@ -2,7 +2,6 @@ import config from "./config";
 import type { Metadata } from "next";
 import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
 import { ThemeProvider } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
 import Theme from './theme';
 import Icons from "./icons";
 import "./styles/style.css";
@@ -41,7 +40,6 @@ export default function RootLayout({
       >
         <Icons />
           <ThemeProvider theme={Theme}>
-            <CssBaseline />
             {children}
           </ThemeProvider>
         <SpeedInsights />
