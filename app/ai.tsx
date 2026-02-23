@@ -15,7 +15,7 @@ async function Slogan() {
       prompt: CHATGPT_PROMPT,
       experimental_transform: smoothStream(),
     });
-    const SLOGAN: string = (await text).replace(/"/g, '');
+    const SLOGAN: string = (await text).replace(/[“”"']/g, '');
     return SLOGAN;
   } catch (error) {
     console.error('Error generating slogan:', error);
