@@ -2,8 +2,9 @@ import config from "./config";
 import Slogan  from "./ai";
 import Logo from "../public/assets/images/logo.svg";
 import Image from "next/image";
-import Link from "next/link";
-import Grow from '@mui/material/Grow';
+import { CssBaseline } from '@mui/material';
+import { Link } from '@mui/material';
+import { Grow } from '@mui/material';
 
 export const dynamic = 'force-dynamic';
 export const maxDuration = 60;
@@ -16,6 +17,7 @@ export default function Alpha() {
   const SLOGAN = Slogan();
   return (
     <div className="flex justify-center align-center items-center w-full h-full bg-white">
+      <CssBaseline />
       <main className="flex flex-col justify-center items-center my-50">
         <Image
           src={Logo}
@@ -40,9 +42,11 @@ export default function Alpha() {
             </h3>
           </Grow>
         </div>
-        <div className="text-center static bottom-0 text-sm mt-10">
+        <div className="text-center text-sm mt-10">
           <Link
-            className="text-normal no-underline hover:none visited:none text-black"
+            className="text-normal text-black"
+            underline="none"
+            color="#000000"
             href={ALPHA_URL}
             target="_blank">
             &copy; {ALPHA_YEAR} {ALPHA_FULL}
