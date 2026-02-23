@@ -1,5 +1,6 @@
 'use client';
-import { createTheme } from '@mui/material/styles';
+import { grey } from '@mui/material/colors';
+import { createTheme } from '@mui/material';
 
 const Light = createTheme({
   colorSchemes: {
@@ -10,10 +11,10 @@ const Light = createTheme({
   palette: {
     mode: 'light',
     background: {
-      default: '#ffffff',
+      default: grey[50],
     },
     text: {
-      primary: '#000000',
+      primary: grey[900],
     },
   },
   typography: {

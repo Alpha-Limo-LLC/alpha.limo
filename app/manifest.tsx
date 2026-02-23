@@ -1,5 +1,6 @@
 import config from "./config";
 import type { MetadataRoute } from 'next'
+import { grey } from '@mui/material/colors';
 
 export default function manifest(): MetadataRoute.Manifest {
   const ALPHA_FULL = config.site_name_full;
@@ -13,8 +14,8 @@ export default function manifest(): MetadataRoute.Manifest {
     id: '/?source=pwa',
     start_url: '/?source=pwa',
     display: 'standalone',
-    background_color: '#ffffff',
-    theme_color: '#ffffff',
+    background_color: grey[50],
+    theme_color: grey[50],
     screenshots: [
       {
         "src": "assets/images/screenshot.png",

@@ -17,7 +17,7 @@ const nextConfig: NextConfig = {
 module.exports = {
   crossOrigin: 'anonymous',
   images: {
-    qualities: [100, 75],
+    qualities: [100, 75, 50, 25],
   },
 }
 
