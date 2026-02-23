@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
   images: {
     localPatterns: [
       {
-        pathname: '/public/assets/**',
+        pathname: '/assets/**',
         search: '',
       },
     ],
