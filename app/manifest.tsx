@@ -6,6 +6,7 @@ export default function manifest(): MetadataRoute.Manifest {
   const ALPHA_SHORT = config.site_name_short;
   const ALPHA_DESCRIPTION = config.site_description;
   return {
+    lang: 'en-US',
     name: ALPHA_FULL,
     short_name: ALPHA_SHORT,
     description: ALPHA_DESCRIPTION,
