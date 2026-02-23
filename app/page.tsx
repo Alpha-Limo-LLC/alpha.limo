@@ -31,14 +31,19 @@ export default function Alpha() {
           </h1>
         </div>
         <div className="flex items-center mt-10">
-          <Fade in={true} timeout={1000}>
+          <Fade
+            in={true}
+            timeout={1000}>
             <h3 className="text-center text-md text-black">
               &quot;{SLOGAN}&quot;
             </h3>
           </Fade>
         </div>
         <div className="text-center static bottom-0 text-sm mt-10">
-          <Link className="text-normal no-underline hover:none visited:none text-black" href={ALPHA_URL} target="_blank">
+          <Link
+            className="text-normal no-underline hover:none visited:none text-black"
+            href={ALPHA_URL}
+            target="_blank">
             &copy; {ALPHA_YEAR} {ALPHA_FULL}
           </Link>
         </div>

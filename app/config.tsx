@@ -1,6 +1,7 @@
 import config from "../config.json";
 
 type Config = {
+  readonly site_home: string;
   readonly site_name_short: string;
   readonly site_name_full: string;
   readonly site_year: number;
