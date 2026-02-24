@@ -10,6 +10,19 @@ const Light = createTheme({
   cssVariables: true,
   palette: {
     mode: 'light',
+    action: {
+        active: grey[900],
+        activatedOpacity: 1,
+        hover: grey[900],
+        hoverOpacity: 1,
+        focus: grey[900],
+        focusOpacity: 1,
+        selected: grey[900],
+        selectedOpacity: 1,
+        disabled: grey[900],
+        disabledBackground: grey[900],
+        disabledOpacity: 1,
+    },
     background: {
       default: grey[50],
     },
