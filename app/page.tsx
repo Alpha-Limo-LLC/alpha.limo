@@ -59,7 +59,7 @@ export default function Alpha() {
             underline="none"
             gutterBottom
             color={grey[900]}
-            href="/assets/pdf/privacy.pdf"
+            href="/assets/pdf/Terms_of_Service.pdf"
             target="_blank">
               Terms of Service
           </Link>
