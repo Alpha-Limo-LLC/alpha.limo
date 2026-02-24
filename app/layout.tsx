@@ -2,10 +2,9 @@ import config from "./src/config";
 import type { Metadata } from "next";
 import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
 import { ThemeProvider } from '@mui/material/styles';
-import Paper from '@mui/material/Paper';
-import Box from '@mui/material/Box';
+import { Paper, Box } from '@mui/material';
 import EmotionRegistry from './src/EmotionRegistry';
-import Light from './src/theme';
+import responsiveTheme from './src/theme';
 import Icons from "./src/icons";
 import "./src/style.css";
 import "./globals.css";
@@ -42,7 +41,7 @@ export default function RootLayout({
         className={`${notoSans.variable} ${notoMono.variable} antialiased`}
       >
           <Icons />
-            <ThemeProvider theme={Light} defaultMode="light">
+            <ThemeProvider theme={responsiveTheme} defaultMode="light">
               <EmotionRegistry>
                 <Paper elevation={1} square={true} sx={{ minHeight: '100vh' }}>
                   <Box

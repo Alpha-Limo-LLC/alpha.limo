@@ -1,8 +1,9 @@
 'use client';
 import { grey } from '@mui/material/colors';
-import { createTheme } from '@mui/material';
+import { createTheme, responsiveFontSizes } from '@mui/material';
 
-const Light = createTheme({
+export const Theme = createTheme({
+
   colorSchemes: {
     light: true,
     dark: false,
@@ -35,4 +36,6 @@ const Light = createTheme({
   },
 });
 
-export default Light;
+const responsiveTheme = responsiveFontSizes(Theme);
+
+export default responsiveTheme;

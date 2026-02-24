@@ -2,9 +2,7 @@ import config from "./src/config";
 import OpenAI  from "./src/ai";
 import Logo from "../public/assets/images/logo.svg";
 import Image from "next/image";
-import Typography from '@mui/material/Typography';
-import Link from '@mui/material/Link';
-import Grow from '@mui/material/Grow';
+import { Typography, Link, Grow } from '@mui/material';
 import { grey } from '@mui/material/colors';
 
 export const dynamic = 'force-dynamic';
