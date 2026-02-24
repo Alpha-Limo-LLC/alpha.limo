@@ -2,8 +2,6 @@ import config from "./alpha/config";
 import Slogan  from "./alpha/ai";
 import Logo from "../public/assets/images/logo.svg";
 import Image from "next/image";
-import CssBaseline from '@mui/material/CssBaseline';
-import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import Link from '@mui/material/Link';
 import Grow from '@mui/material/Grow';
@@ -20,8 +18,6 @@ export default function Alpha() {
   const SLOGAN = Slogan();
   return (
     <div className="flex justify-center align-center w-full h-full">
-      <CssBaseline />
-      <Paper elevation={0} square={true} />
       <main className="flex flex-col items-center my-50">
         <Image
           src={Logo}
