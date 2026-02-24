@@ -2,8 +2,9 @@ import config from "./alpha/config";
 import type { Metadata } from "next";
 import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
 import { ThemeProvider } from '@mui/material/styles';
-import Light from './theme/theme';
-import Icons from "./icons";
+import EmotionRegistry from './alpha/EmotionRegistry';
+import Light from './alpha/theme';
+import Icons from "./alpha/icons";
 import "./styles/style.css";
 import "./styles/globals.css";
 import { SpeedInsights } from '@vercel/speed-insights/next';
@@ -40,7 +41,9 @@ export default function RootLayout({
       >
         <Icons />
           <ThemeProvider theme={Light} defaultMode="light">
-            {children}
+            <EmotionRegistry>
+              {children}
+            </EmotionRegistry>
           </ThemeProvider>
         <SpeedInsights />
         <Analytics />

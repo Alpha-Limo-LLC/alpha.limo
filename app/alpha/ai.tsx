@@ -1,4 +1,4 @@
-import config from "../alpha/config";
+import config from "./config";
 import { smoothStream, streamText } from 'ai';
 
 async function Slogan() {
