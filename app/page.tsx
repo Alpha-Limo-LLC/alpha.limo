@@ -8,7 +8,7 @@ import Grow from '@mui/material/Grow';
 import { grey } from '@mui/material/colors';
 
 export const dynamic = 'force-dynamic';
-export const maxDuration = 60;
+export const maxDuration = 15;
 
 export default function Alpha() {
   const ALPHA_FULL = config.site_name_full;
