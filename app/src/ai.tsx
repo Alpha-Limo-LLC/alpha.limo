@@ -1,5 +1,6 @@
 import config from "./config";
 import { smoothStream, streamText } from 'ai';
+import { openai } from '@ai-sdk/openai';
 
 async function Slogan() {
   try {
@@ -8,7 +9,7 @@ async function Slogan() {
     const CHATGPT_MOTIVATION = config.chatgpt_motivation;
     const CHATGPT_PROMPT = config.chatgpt_prompt;
     const { text } = await streamText({
-      model: CHATGPT_MODEL,
+      model: openai(CHATGPT_MODEL),
       maxOutputTokens: 50,
       temperature: 0.3,
       system:
