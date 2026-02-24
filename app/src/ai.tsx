@@ -9,6 +9,8 @@ async function Slogan() {
     const CHATGPT_PROMPT = config.chatgpt_prompt;
     const { text } = await streamText({
       model: CHATGPT_MODEL,
+      maxOutputTokens: 50,
+      temperature: 0.3,
       system:
         CHATGPT_STANCE +
         CHATGPT_MOTIVATION,
