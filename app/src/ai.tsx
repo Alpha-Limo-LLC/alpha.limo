@@ -9,7 +9,7 @@ async function Slogan() {
     const CHATGPT_MOTIVATION = config.chatgpt_motivation;
     const CHATGPT_PROMPT = config.chatgpt_prompt;
     const { text } = await streamText({
-      model: openai(CHATGPT_MODEL),
+      model: openai('gpt-4.1-nano'),
       maxOutputTokens: 50,
       temperature: 0.3,
       system:
