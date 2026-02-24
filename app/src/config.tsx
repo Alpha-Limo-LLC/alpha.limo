@@ -8,8 +8,11 @@ type Config = {
   readonly site_url: string;
   readonly site_description: string;
   readonly chatgpt_model: string;
+  readonly chatgpt_organization: string;
   readonly chatgpt_system: string;
   readonly chatgpt_user: string;
+  readonly chatgpt_tokens: number;
+  readonly chatgpt_temp: number;
   readonly chatgpt_prompt: string;
   readonly meta_title: string;
   readonly meta_description: string;

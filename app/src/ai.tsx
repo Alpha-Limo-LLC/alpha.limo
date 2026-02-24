@@ -4,14 +4,18 @@ import { openai } from '@ai-sdk/openai';
 
 async function OpenAI() {
   try {
-    const CHATGPT_MODEL = config.chatgpt_model;
+    const CHATGPT_MODEL = openai(`${config.chatgpt_model}`);
+    const CHATGPT_ORGANIZATION = config.chatgpt_organization;
     const CHATGPT_SYSTEM = config.chatgpt_system;
     const CHATGPT_USER = config.chatgpt_user;
+    const CHATGPT_TOKENS = config.chatgpt_tokens;
+    const CHATGPT_TEMP = config.chatgpt_temp;
     const CHATGPT_PROMPT = config.chatgpt_prompt;
     const { text } = await streamText({
-      model: openai(`${CHATGPT_MODEL}`),
-      maxOutputTokens: 100,
-      temperature: 0.7,
+      model: CHATGPT_MODEL,
+      organization: CHATGPT_ORGANIZATION,
+      maxOutputTokens: CHATGPT_TOKENS,
+      temperature: CHATGPT_TEMP,
       system:
         CHATGPT_SYSTEM +
         CHATGPT_USER,
