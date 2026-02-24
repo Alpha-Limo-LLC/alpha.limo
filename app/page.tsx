@@ -17,8 +17,8 @@ export default function Alpha() {
   const ALPHA_URL = config.site_url;
   const SLOGAN = Slogan();
   return (
-    <div className="flex justify-center align-center w-full h-full">
-      <main className="flex flex-col items-center my-50">
+    <div>
+      <main className="flex flex-col items-center w-full h-full my-50">
         <Image
           src={Logo}
           alt={ALPHA_FULL}
@@ -28,12 +28,12 @@ export default function Alpha() {
           width={250}
           height={250}
         ></Image>
-        <div className="flex text-5xl font-extrabold mt-10">
+        <div className="flex text-center text-5xl font-extrabold mt-10">
           <h1>
             {ALPHA_SHORT}
           </h1>
         </div>
-        <div className="flex text-md font-normal mt-10">
+        <div className="flex text-center mt-10">
           <Grow
             in={true}
             timeout="auto">
@@ -45,7 +45,7 @@ export default function Alpha() {
             </Typography>
           </Grow>
         </div>
-        <div className="flex text-sm font-normal mt-10">
+        <div className="flex text-center mt-10">
           <Link
             underline="none"
             gutterBottom
