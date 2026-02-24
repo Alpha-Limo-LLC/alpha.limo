@@ -2,7 +2,6 @@ import config from "./config";
 import type { Metadata } from "next";
 import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
 import { ThemeProvider } from '@mui/material/styles';
-import EmotionRegistry from './EmotionRegistry';
 import Light from './theme';
 import Icons from "./icons";
 import "./styles/style.css";
@@ -41,9 +40,7 @@ export default function RootLayout({
       >
         <Icons />
           <ThemeProvider theme={Light} defaultMode="light">
-            <EmotionRegistry>
-              {children}
-            </EmotionRegistry>
+            {children}
           </ThemeProvider>
         <SpeedInsights />
         <Analytics />
