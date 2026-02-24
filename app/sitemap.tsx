@@ -1,4 +1,4 @@
-import config from "./config";
+import config from "./alpha/config";
 import type { MetadataRoute } from 'next'
 
 export default function sitemap(): MetadataRoute.Sitemap {

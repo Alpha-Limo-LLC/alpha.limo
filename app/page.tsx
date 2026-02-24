@@ -1,5 +1,5 @@
-import config from "./config";
-import Slogan  from "./ai";
+import config from "./alpha/config";
+import Slogan  from "./openai/ai";
 import Logo from "../public/assets/images/logo.svg";
 import Image from "next/image";
 import { CssBaseline } from '@mui/material';
