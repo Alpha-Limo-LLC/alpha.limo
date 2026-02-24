@@ -5,21 +5,21 @@ import { openai } from '@ai-sdk/openai';
 async function OpenAI() {
   try {
     const CHATGPT_MODEL = config.chatgpt_model;
-    const CHATGPT_STANCE = config.chatgpt_stance;
-    const CHATGPT_MOTIVATION = config.chatgpt_motivation;
+    const CHATGPT_SYSTEM = config.chatgpt_system;
+    const CHATGPT_USER = config.chatgpt_user;
     const CHATGPT_PROMPT = config.chatgpt_prompt;
     const { text } = await streamText({
       model: openai(`${CHATGPT_MODEL}`),
-      maxOutputTokens: 50,
-      temperature: 0.3,
+      maxOutputTokens: 100,
+      temperature: 0.7,
       system:
-        CHATGPT_STANCE +
-        CHATGPT_MOTIVATION,
+        CHATGPT_SYSTEM +
+        CHATGPT_USER,
       prompt: CHATGPT_PROMPT,
       experimental_transform: smoothStream(),
     });
-    const GPT: string = (await text).replace(/[“”"']/g, '');
-    return GPT;
+    const CHATGPT: string = (await text).replace(/[“”"']/g, '');
+    return CHATGPT;
   } catch (error) {
     console.error('Error generating slogan:', error);
     throw error;
