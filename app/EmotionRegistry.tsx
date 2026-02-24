@@ -10,7 +10,7 @@ const EmotionRegistry = ({ children }: { children: React.ReactNode }) => {
 
   useServerInsertedHTML(() => {
     const styles = emotionCache.inserted;
-    if (styles.length === 0) return null;
+    if (Object.keys(styles).length === 0) return null;
 
     const emotionKey = `${emotionCache.key} ${Object.keys(styles).join(' ')}`;
 
