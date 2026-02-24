@@ -17,7 +17,7 @@ export default function Alpha() {
   const ALPHA_URL = config.site_url;
   const SLOGAN = Slogan();
   return (
-    <div className="flex w-full h-full">
+    <div>
       <main className="flex flex-col items-center w-full h-full my-50">
         <Image
           src={Logo}

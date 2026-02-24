@@ -46,7 +46,6 @@ export default function RootLayout({
               <EmotionRegistry>
                 <Paper elevation={1} square={true} sx={{ minHeight: '100vh' }}>
                   <Box
-                    component="div"
                     sx={{
                       display: 'flex',
                       flexDirection: 'column',
