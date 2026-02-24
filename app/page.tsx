@@ -21,7 +21,7 @@ export default function Alpha() {
   return (
     <div className="flex justify-center align-center w-full h-full">
       <CssBaseline />
-      <Paper elevation={3} square={true} />
+      <Paper elevation={0} square={true} />
       <main className="flex flex-col items-center my-50">
         <Image
           src={Logo}
