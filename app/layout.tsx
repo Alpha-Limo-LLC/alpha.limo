@@ -41,11 +41,11 @@ export default function RootLayout({
         className={`${notoSans.variable} ${notoMono.variable} antialiased`}
       >
         <Icons />
-          <ThemeProvider theme={Light} defaultMode="light">
-              <EmotionRegistry>
+            <ThemeProvider theme={Light} defaultMode="light">
                 <Paper elevation={0} square={true} />
-                  {children}
-              </EmotionRegistry>
+                    <EmotionRegistry>
+                        {children}
+                    </EmotionRegistry>
             </ThemeProvider>
         <SpeedInsights />
         <Analytics />
