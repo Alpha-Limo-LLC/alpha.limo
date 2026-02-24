@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
 import { ThemeProvider } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
+import Box from '@mui/material/Box';
 import EmotionRegistry from './alpha/EmotionRegistry';
 import Light from './alpha/theme';
 import Icons from "./alpha/icons";
@@ -43,7 +44,16 @@ export default function RootLayout({
         <Icons />
           <ThemeProvider theme={Light} defaultMode="light">
             <EmotionRegistry>
-              <Paper elevation={0} square={true} />
+              <Paper elevation={1} square={true} />
+                <Box
+                  component="div"
+                  sx={{
+                    display: 'flex',
+                    flexDirection: 'column',
+                    minHeight: '100vh',
+                  }}>
+                    {children}
+                </Box>
                 {children}
             </EmotionRegistry>
           </ThemeProvider>
