@@ -17,7 +17,6 @@ const EmotionRegistry = ({ children }: { children: React.ReactNode }) => {
     return (
       <style
         data-emotion={emotionKey}
-        // eslint-disable-next-line react/no-danger
         dangerouslySetInnerHTML={{ __html: Object.values(styles).join(' ') }}
       />
     );
