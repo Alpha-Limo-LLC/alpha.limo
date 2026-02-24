@@ -1,5 +1,5 @@
-import config from "./alpha/config";
-import Slogan  from "./alpha/ai";
+import config from "./src/config";
+import Slogan  from "./src/ai";
 import Logo from "../public/assets/images/logo.svg";
 import Image from "next/image";
 import Typography from '@mui/material/Typography';

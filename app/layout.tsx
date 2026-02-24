@@ -1,12 +1,12 @@
-import config from "./alpha/config";
+import config from "./src/config";
 import type { Metadata } from "next";
 import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
 import { ThemeProvider } from '@mui/material/styles';
 import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
-import EmotionRegistry from './alpha/EmotionRegistry';
-import Light from './alpha/theme';
-import Icons from "./alpha/icons";
+import EmotionRegistry from './src/EmotionRegistry';
+import Light from './src/theme';
+import Icons from "./src/icons";
 import "./styles/style.css";
 import "./styles/globals.css";
 import { SpeedInsights } from '@vercel/speed-insights/next';

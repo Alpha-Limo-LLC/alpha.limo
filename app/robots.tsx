@@ -1,4 +1,4 @@
-import config from "./alpha/config";
+import config from "./src/config";
 import type { MetadataRoute } from 'next'
 
 export default function robots(): MetadataRoute.Robots {
