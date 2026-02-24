@@ -5,7 +5,7 @@ import { ThemeProvider } from '@mui/material/styles';
 import Light from './theme/theme';
 import Icons from "./icons";
 import "./styles/style.css";
-import "./globals.css";
+import "./styles/globals.css";
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/next';
 
