@@ -54,7 +54,6 @@ export default function RootLayout({
                   }}>
                     {children}
                 </Box>
-                {children}
             </EmotionRegistry>
           </ThemeProvider>
         <SpeedInsights />
