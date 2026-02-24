@@ -42,13 +42,13 @@ export default function RootLayout({
         className={`${notoSans.variable} ${notoMono.variable} antialiased`}
       >
         <Icons />
-          <ThemeProvider theme={Light} defaultMode="light">
-            <EmotionRegistry>
+          <EmotionRegistry>
+            <ThemeProvider theme={Light} defaultMode="light">
               <CssBaseline />
-              <Paper elevation={0} square={true} />
-              {children}
-            </EmotionRegistry>
-          </ThemeProvider>
+                <Paper elevation={0} square={true} />
+                  {children}
+            </ThemeProvider>
+          </EmotionRegistry>
         <SpeedInsights />
         <Analytics />
       </body>
