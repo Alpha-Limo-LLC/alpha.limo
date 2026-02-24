@@ -1,5 +1,5 @@
 import config from "./src/config";
-import Slogan  from "./src/ai";
+import OpenAI  from "./src/ai";
 import Logo from "../public/assets/images/logo.svg";
 import Image from "next/image";
 import Typography from '@mui/material/Typography';
@@ -15,7 +15,7 @@ export default function Alpha() {
   const ALPHA_SHORT = config.site_name_short;
   const ALPHA_YEAR = config.site_year;
   const ALPHA_URL = config.site_url;
-  const SLOGAN = Slogan();
+  const GPT = OpenAI();
   return (
     <div>
       <main className="flex flex-col items-center w-full h-full my-50">
@@ -41,7 +41,7 @@ export default function Alpha() {
               variant="body1"
               gutterBottom
               color={grey[900]}>
-                &ldquo;{SLOGAN}&rdquo;
+                &ldquo;{GPT}&rdquo;
             </Typography>
           </Grow>
         </div>
