@@ -1,4 +1,4 @@
-/*! tailwindcss v4.1.18 | MIT License | https://tailwindcss.com */
+/*! tailwindcss v4.2.0 | MIT License | https://tailwindcss.com */
 @layer properties;
 @layer theme, base, mui, components, utilities;
 @layer theme, base, components, utilities;
@@ -11,6 +11,7 @@
     --text-sm--line-height: calc(1.25 / 0.875);
     --text-5xl: 3rem;
     --text-5xl--line-height: 1;
+    --font-weight-normal: 400;
     --font-weight-extrabold: 800;
     --default-font-family: var(--font-noto-sans);
     --default-mono-font-family: var(--font-noto-mono);
@@ -165,17 +166,14 @@
   }
 }
 @layer utilities {
-  .static {
-    position: static;
-  }
-  .bottom-0 {
-    bottom: calc(var(--spacing) * 0);
+  .start {
+    inset-inline-start: var(--spacing);
   }
   .my-50 {
     margin-block: calc(var(--spacing) * 50);
   }
-  .mt-5 {
-    margin-top: calc(var(--spacing) * 5);
+  .mt-10 {
+    margin-top: calc(var(--spacing) * 10);
   }
   .flex {
     display: flex;
@@ -195,18 +193,6 @@
   .justify-center {
     justify-content: center;
   }
-  .gap-6 {
-    gap: calc(var(--spacing) * 6);
-  }
-  .bg-white {
-    background-color: var(--color-white);
-  }
-  .p-5 {
-    padding: calc(var(--spacing) * 5);
-  }
-  .text-center {
-    text-align: center;
-  }
   .text-5xl {
     font-size: var(--text-5xl);
     line-height: var(--tw-leading, var(--text-5xl--line-height));
@@ -219,8 +205,12 @@
     --tw-font-weight: var(--font-weight-extrabold);
     font-weight: var(--font-weight-extrabold);
   }
-  .text-black {
-    color: var(--color-black);
+  .font-normal {
+    --tw-font-weight: var(--font-weight-normal);
+    font-weight: var(--font-weight-normal);
+  }
+  .underline {
+    text-decoration-line: underline;
   }
   .antialiased {
     -webkit-font-smoothing: antialiased;
@@ -228,19 +218,19 @@
   }
 }
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #fafafa;
+  --foreground: #212121;
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #171717;
-    --foreground: #ffffff;
+    --background: #212121;
+    --foreground: #fafafa;
   }
 }
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-noto-sans), var(--font-noto-sans-mono), sans-serif;
 }
 @property --tw-font-weight {
   syntax: "*";
