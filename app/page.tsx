@@ -45,7 +45,7 @@ export default function Alpha() {
             </Typography>
           </Grow>
         </div>
-        <div className="flex text-center mt-10">
+        <div className="flex text-center text-sm mt-10">
           <Link
             underline="none"
             gutterBottom
@@ -53,6 +53,15 @@ export default function Alpha() {
             href={ALPHA_URL}
             target="_blank">
               &copy; {ALPHA_YEAR} {ALPHA_FULL}
+          </Link>
+          &nbsp;&bull;&nbsp;
+          <Link
+            underline="none"
+            gutterBottom
+            color={grey[900]}
+            href="/assets/pdf/privacy.pdf"
+            target="_blank">
+              Terms of Service
           </Link>
         </div>
       </main>
