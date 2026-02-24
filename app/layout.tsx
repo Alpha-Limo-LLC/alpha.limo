@@ -41,22 +41,23 @@ export default function RootLayout({
       <body
         className={`${notoSans.variable} ${notoMono.variable} antialiased`}
       >
-        <Icons />
-          <ThemeProvider theme={Light} defaultMode="light">
-            <EmotionRegistry>
-              <Paper elevation={1} square={true} />
-                <Box
-                  component="div"
-                  sx={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    minHeight: '100vh',
-                  }}>
-                    {children}
-                </Box>
-            </EmotionRegistry>
-          </ThemeProvider>
-        <SpeedInsights />
+          <Icons />
+            <ThemeProvider theme={Light} defaultMode="light">
+              <EmotionRegistry>
+                <Paper elevation={1} square={true} sx={{ minHeight: '100vh' }}>
+                  <Box
+                    component="div"
+                    sx={{
+                      display: 'flex',
+                      flexDirection: 'column',
+                      minHeight: '100vh',
+                    }}>
+                      {children}
+                  </Box>
+                </Paper>
+              </EmotionRegistry>
+            </ThemeProvider>
+          <SpeedInsights />
         <Analytics />
       </body>
     </html>
