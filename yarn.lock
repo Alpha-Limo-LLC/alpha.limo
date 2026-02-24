@@ -12,9 +12,9 @@
     "@vercel/oidc" "3.1.0"
 
 "@ai-sdk/openai@^3.0.31":
-  version "3.0.31"
-  resolved "https://registry.yarnpkg.com/@ai-sdk/openai/-/openai-3.0.31.tgz#22c7fa3d49de20005c75eaab328649844ca48808"
-  integrity sha512-61DmKNdwi2S83YZO80tCUibcOq0nNKa+vF9m+3VlD0b6bZ8FSe7GrO0bCCZaBeucu79OxWPx7Q1u0v3hxb91mQ==
+  version "3.0.33"
+  resolved "https://registry.yarnpkg.com/@ai-sdk/openai/-/openai-3.0.33.tgz#584e45dd29a48f8701bd882f5cca0aafd75e39a4"
+  integrity sha512-O/8SVKAiwFHkGAUfBnrLb7L2IjbpP9ySWbmOktOfa0KtzutZkmKNrJ5CtB5dj+lwuENbOuZeRsnsZdOjar7hig==
   dependencies:
     "@ai-sdk/provider" "3.0.8"
     "@ai-sdk/provider-utils" "4.0.15"
