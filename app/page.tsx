@@ -2,11 +2,11 @@ import config from "./alpha/config";
 import Slogan  from "./alpha/ai";
 import Logo from "../public/assets/images/logo.svg";
 import Image from "next/image";
-import { CssBaseline } from '@mui/material';
-import { Paper } from '@mui/material';
-import { Typography } from '@mui/material';
-import { Link } from '@mui/material';
-import { Grow } from '@mui/material';
+import CssBaseline from '@mui/material/CssBaseline';
+import Paper from '@mui/material/Paper';
+import Typography from '@mui/material/Typography';
+import Link from '@mui/material/Link';
+import Grow from '@mui/material/Grow';
 import { grey } from '@mui/material/colors';
 
 export const dynamic = 'force-dynamic';
