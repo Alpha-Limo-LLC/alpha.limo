@@ -2,11 +2,12 @@ import config from "./config";
 import Slogan  from "./ai";
 import Logo from "../public/assets/images/logo.svg";
 import Image from "next/image";
-import { Paper } from '@mui/material';
 import { CssBaseline } from '@mui/material';
-import { grey } from '@mui/material/colors';
+import { Paper } from '@mui/material';
+import { Typography } from '@mui/material';
 import { Link } from '@mui/material';
 import { Grow } from '@mui/material';
+import { grey } from '@mui/material/colors';
 
 export const dynamic = 'force-dynamic';
 export const maxDuration = 60;
@@ -40,9 +41,12 @@ export default function Alpha() {
           <Grow
             in={true}
             timeout="auto">
-            <h3>
-              &ldquo;{SLOGAN}&rdquo;
-            </h3>
+            <Typography
+              variant="body1"
+              gutterBottom
+              color={grey[900]}>
+                &ldquo;{SLOGAN}&rdquo;
+            </Typography>
           </Grow>
         </div>
         <div className="flex text-sm font-normal mt-10">
@@ -51,7 +55,7 @@ export default function Alpha() {
             color={grey[900]}
             href={ALPHA_URL}
             target="_blank">
-            &copy; {ALPHA_YEAR} {ALPHA_FULL}
+              &copy; {ALPHA_YEAR} {ALPHA_FULL}
           </Link>
         </div>
       </main>
