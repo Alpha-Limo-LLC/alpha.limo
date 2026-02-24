@@ -7,8 +7,8 @@ import Box from '@mui/material/Box';
 import EmotionRegistry from './src/EmotionRegistry';
 import Light from './src/theme';
 import Icons from "./src/icons";
-import "./styles/style.css";
-import "./styles/globals.css";
+import "./src/style.css";
+import "./globals.css";
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import { Analytics } from '@vercel/analytics/next';
 
