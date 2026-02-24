@@ -52,6 +52,7 @@ export default function Alpha() {
         <div className="flex text-sm font-normal mt-10">
           <Link
             underline="none"
+            gutterBottom
             color={grey[900]}
             href={ALPHA_URL}
             target="_blank">
