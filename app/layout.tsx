@@ -2,7 +2,6 @@ import config from "./alpha/config";
 import type { Metadata } from "next";
 import { Noto_Sans, Noto_Sans_Mono } from "next/font/google";
 import { ThemeProvider } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
 import Paper from '@mui/material/Paper';
 import EmotionRegistry from './alpha/EmotionRegistry';
 import Light from './alpha/theme';
@@ -43,7 +42,6 @@ export default function RootLayout({
       >
         <Icons />
           <ThemeProvider theme={Light} defaultMode="light">
-            <CssBaseline />
               <EmotionRegistry>
                 <Paper elevation={0} square={true} />
                   {children}
