@@ -16,9 +16,6 @@ const nextConfig: NextConfig = {
 
 module.exports = {
   crossOrigin: 'anonymous',
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
   images: {
     qualities: [100, 75, 50, 25],
   },
