@@ -5,7 +5,6 @@ import { openai } from '@ai-sdk/openai';
 async function OpenAI() {
   try {
     const CHATGPT_MODEL = openai(`${config.chatgpt_model}`);
-    const CHATGPT_ORGANIZATION = config.chatgpt_organization;
     const CHATGPT_SYSTEM = config.chatgpt_system;
     const CHATGPT_USER = config.chatgpt_user;
     const CHATGPT_TOKENS = config.chatgpt_tokens;
@@ -13,7 +12,6 @@ async function OpenAI() {
     const CHATGPT_PROMPT = config.chatgpt_prompt;
     const { text } = await streamText({
       model: CHATGPT_MODEL,
-      organization: CHATGPT_ORGANIZATION,
       maxOutputTokens: CHATGPT_TOKENS,
       temperature: CHATGPT_TEMP,
       system:

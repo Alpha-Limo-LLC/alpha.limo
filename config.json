@@ -6,7 +6,6 @@
     "site_url": "https://github.com/Alpha-Limo-LLC/alpha.limo",
     "site_description": "Alpha Limo LLC is a premier transportation service provider offering luxury and reliable limo services for all occasions. Experience comfort and style with our professional chauffeurs and top-notch vehicles.",
     "chatgpt_model": "gpt-4.1-nano",
-    "chatgpt_organization": "org-8yOBOWXoH4ogOeMibGjVLPcO",
     "chatgpt_system": "You are a professional business owner. ",
     "chatgpt_user": "You write simple, clear, and concise content.",
     "chatgpt_tokens": 100,
