@@ -2,10 +2,10 @@
 # yarn lockfile v1
 
 
-"@ai-sdk/gateway@3.0.53":
-  version "3.0.53"
-  resolved "https://registry.yarnpkg.com/@ai-sdk/gateway/-/gateway-3.0.53.tgz#656a60e4af69911a314a2b556001d50983ed6c00"
-  integrity sha512-QT3FEoNARMRlk8JJVR7L98exiK9C8AGfrEJVbRxBT1yIXKs/N19o/+PsjTRVsARgDJNcy9JbJp1FspKucEat0Q==
+"@ai-sdk/gateway@3.0.55":
+  version "3.0.55"
+  resolved "https://registry.yarnpkg.com/@ai-sdk/gateway/-/gateway-3.0.55.tgz#0a74425037ed39756ce59b153235bf3ba13cd43a"
+  integrity sha512-7xMeTJnCjwRwXKVCiv4Ly4qzWvDuW3+W1WIV0X1EFu6W83d4mEhV9bFArto10MeTw40ewuDjrbrZd21mXKohkw==
   dependencies:
     "@ai-sdk/provider" "3.0.8"
     "@ai-sdk/provider-utils" "4.0.15"
@@ -2008,11 +2008,11 @@ agent-base@^7.1.0, agent-base@^7.1.2:
   integrity sha512-MnA+YT8fwfJPgBx3m60MNqakm30XOkyIoH1y6huTQvC0PwZG7ki8NacLBcrPbNoo8vEZy7Jpuk7+jMO+CUovTQ==
 
 ai@^6.0.97:
-  version "6.0.97"
-  resolved "https://registry.yarnpkg.com/ai/-/ai-6.0.97.tgz#e546a569bf085c1438d4b6e44e412785f6751710"
-  integrity sha512-eZIAcBymwGhBwncRH/v9pillZNMeRCDkc4BwcvwXerXd7sxjVxRis3ZNCNCpP02pVH4NLs81ljm4cElC4vbNcQ==
+  version "6.0.99"
+  resolved "https://registry.yarnpkg.com/ai/-/ai-6.0.99.tgz#e6f47c2a176f112c202dff1e52a53b57158694ce"
+  integrity sha512-Zg43DDJLppe22e7IWXNwpgtxR2VRFyVJSBUZNlCz2jmyzRgaHzBqINkoy6WIakyD75LOqLCQdGMOGAqTnfO3Aw==
   dependencies:
-    "@ai-sdk/gateway" "3.0.53"
+    "@ai-sdk/gateway" "3.0.55"
     "@ai-sdk/provider" "3.0.8"
     "@ai-sdk/provider-utils" "4.0.15"
     "@opentelemetry/api" "1.9.0"
