@@ -2008,9 +2008,9 @@ agent-base@^7.1.0, agent-base@^7.1.2:
   integrity sha512-MnA+YT8fwfJPgBx3m60MNqakm30XOkyIoH1y6huTQvC0PwZG7ki8NacLBcrPbNoo8vEZy7Jpuk7+jMO+CUovTQ==
 
 ai@^6.0.97:
-  version "6.0.100"
-  resolved "https://registry.yarnpkg.com/ai/-/ai-6.0.100.tgz#4bde4b835ab95dcfdc209970b7b6ff7d74fb0068"
-  integrity sha512-BIxhG7M7wvcWCF+IEnZi7WpkRLOM3jR2vJ0mMuohl2UB2i1R/ZUa1cHFel1xI8nWvyUpOoQXKqsM0BAH50EYSQ==
+  version "6.0.101"
+  resolved "https://registry.yarnpkg.com/ai/-/ai-6.0.101.tgz#ddfc38440085efbd89624b52911d4dbef2a3fd6f"
+  integrity sha512-Ur/NgbgOp1rdhyDiKDk6EOpSgd1g5ADlbcD1cjQJtQsnmhEngz3Rf8nK5JetDh0vnbLy2aEBpaQeL+zvLRWuaA==
   dependencies:
     "@ai-sdk/gateway" "3.0.55"
     "@ai-sdk/provider" "3.0.8"
