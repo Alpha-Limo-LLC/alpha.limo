@@ -2,13 +2,13 @@
 # yarn lockfile v1
 
 
-"@ai-sdk/gateway@3.0.60":
-  version "3.0.60"
-  resolved "https://registry.yarnpkg.com/@ai-sdk/gateway/-/gateway-3.0.60.tgz#c03e11314d43201fef5035cd5dcd2bff931c57be"
-  integrity sha512-CUwcZRzJEGVhz68Ve7WY0YYbnNOnB6MkL8GcmgjU5hAZbUPaBWUmHOp3N6BRgNzAnwh1mtOLSC3e3+F5Dx+PKg==
+"@ai-sdk/gateway@3.0.61":
+  version "3.0.61"
+  resolved "https://registry.yarnpkg.com/@ai-sdk/gateway/-/gateway-3.0.61.tgz#5e2fd44a08a3053195a2067102980b9bc83c7af1"
+  integrity sha512-OT6SeORuOoqfABhntMJHmInblxE2DbBYvRTynVOGl6dCDDh0cNU1lJgknyDV698eQmfb6Um/94/rImgt0ZPjDA==
   dependencies:
     "@ai-sdk/provider" "3.0.8"
-    "@ai-sdk/provider-utils" "4.0.16"
+    "@ai-sdk/provider-utils" "4.0.17"
     "@vercel/oidc" "3.1.0"
 
 "@ai-sdk/openai@^3.0.31":
@@ -18,15 +18,6 @@
   dependencies:
     "@ai-sdk/provider" "3.0.8"
     "@ai-sdk/provider-utils" "4.0.17"
-
-"@ai-sdk/provider-utils@4.0.16":
-  version "4.0.16"
-  resolved "https://registry.yarnpkg.com/@ai-sdk/provider-utils/-/provider-utils-4.0.16.tgz#24bb427d5ed023ef245f3a7af0e83590c45a74b5"
-  integrity sha512-kBvDqNkt5EwlzF9FujmNhhtl8FYg3e8FO8P5uneKliqfRThWemzBj+wfYr7ZCymAQhTRnwSSz1/SOqhOAwmx9g==
-  dependencies:
-    "@ai-sdk/provider" "3.0.8"
-    "@standard-schema/spec" "^1.1.0"
-    eventsource-parser "^3.0.6"
 
 "@ai-sdk/provider-utils@4.0.17":
   version "4.0.17"
@@ -2017,13 +2008,13 @@ agent-base@^7.1.0, agent-base@^7.1.2:
   integrity sha512-MnA+YT8fwfJPgBx3m60MNqakm30XOkyIoH1y6huTQvC0PwZG7ki8NacLBcrPbNoo8vEZy7Jpuk7+jMO+CUovTQ==
 
 ai@^6.0.97:
-  version "6.0.106"
-  resolved "https://registry.yarnpkg.com/ai/-/ai-6.0.106.tgz#5c097dfd5e0392a3859df26f2f7dfa7796993abd"
-  integrity sha512-wAOLMLoVfTEN99FMwdqREi8tWeQCcns6DxkQg8kkzcTxc/ZTQaF7CRqgjI2OSQt2RlzKXPLcJBpZr7axc8cCgQ==
+  version "6.0.108"
+  resolved "https://registry.yarnpkg.com/ai/-/ai-6.0.108.tgz#437bb48474be81067d222d7d8cb8cfac5f07e2f1"
+  integrity sha512-h2xwwU9lE+tdLyII/uFcjcrw+7ciWj2S68GrwQsebjHPSfnvxwrn+sjIl+tBt419yA9rYznWXtQvHJxM1wEAAQ==
   dependencies:
-    "@ai-sdk/gateway" "3.0.60"
+    "@ai-sdk/gateway" "3.0.61"
     "@ai-sdk/provider" "3.0.8"
-    "@ai-sdk/provider-utils" "4.0.16"
+    "@ai-sdk/provider-utils" "4.0.17"
     "@opentelemetry/api" "1.9.0"
 
 ajv@^6.12.3, ajv@^6.14.0:
