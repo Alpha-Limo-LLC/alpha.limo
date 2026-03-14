@@ -27,7 +27,7 @@ export default async function Alpha() {
         </div>
         <div className="flex text-center mt-10">
           <Grow in={true} timeout="auto">
-            <Typography variant="body1" gutterBottom color={grey[900]}>
+            <Typography variant="body1" color={grey[900]}>
               &ldquo;{openaiText}&rdquo;
             </Typography>
           </Grow>
@@ -35,22 +35,11 @@ export default async function Alpha() {
         <div className="flex text-center text-sm mt-10">
           <Link
             underline="none"
-            gutterBottom
             color={grey[900]}
             href={config.site_url}
             target="_blank"
           >
             &copy; {config.site_year} {config.site_name_full}
-          </Link>
-          &nbsp;&bull;&nbsp;
-          <Link
-            underline="none"
-            gutterBottom
-            color={grey[900]}
-            href="/assets/pdf/Terms_of_Service.pdf"
-            target="_blank"
-          >
-            Terms of Service
           </Link>
         </div>
       </main>
