@@ -1,13 +1,12 @@
 import type { MetadataRoute } from 'next'
 import config from './src/config'
 
-export default function sitemap(): MetadataRoute.Sitemap {
-  const ALPHA_HOME = config.site_home
+export default function Sitemap(): MetadataRoute.Sitemap {
   return [
     {
-      url: ALPHA_HOME,
-      lastModified: new Date(),
-      changeFrequency: 'monthly',
+      url: config.site_home,
+      lastModified: new Date().toISOString(),
+      changeFrequency: 'weekly',
       priority: 1,
     },
   ]
