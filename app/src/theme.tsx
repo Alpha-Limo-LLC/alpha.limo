@@ -1,40 +1,58 @@
-'use client'
 import { createTheme, responsiveFontSizes } from '@mui/material'
 import { grey } from '@mui/material/colors'
 
-export const Theme = createTheme({
+const theme = createTheme({
+  modularCssLayers: '@layer theme, base, mui, components, utilities;',
   colorSchemes: {
-    light: true,
-    dark: false,
+    light: {
+      palette: {
+        mode: 'light',
+        background: {
+          default: grey[50],
+        },
+        text: {
+          primary: grey[900],
+        },
+        action: {
+          active: grey[900],
+          activatedOpacity: 1,
+          hover: grey[900],
+          hoverOpacity: 1,
+          focus: grey[900],
+          focusOpacity: 1,
+          selected: grey[900],
+          selectedOpacity: 1,
+          disabled: grey[900],
+          disabledBackground: grey[900],
+          disabledOpacity: 1,
+        },
+      },
+    },
   },
   cssVariables: true,
-  palette: {
-    mode: 'light',
-    action: {
-      active: grey[900],
-      activatedOpacity: 1,
-      hover: grey[900],
-      hoverOpacity: 1,
-      focus: grey[900],
-      focusOpacity: 1,
-      selected: grey[900],
-      selectedOpacity: 1,
-      disabled: grey[900],
-      disabledBackground: grey[900],
-      disabledOpacity: 1,
+  typography: {
+    fontFamily: 'var(--font-noto-sans), var(--font-noto-sans-mono)',
+    h3: {
+      fontWeight: 900,
+      fontSize: '2.75rem',
+      color: grey[900],
     },
-    background: {
-      default: grey[50],
-    },
-    text: {
-      primary: grey[900],
+    body1: {
+      fontSize: '1.15rem',
+      color: grey[900],
     },
   },
-  typography: {
-    fontFamily: 'var(--font-noto-sans), var(--font-noto-sans-mono), sans-serif',
+  components: {
+    MuiTypography: {
+      defaultProps: {
+        variantMapping: {
+          h3: 'h3',
+          body1: 'div',
+          body2: 'div',
+        },
+      },
+    },
   },
 })
 
-const responsiveTheme = responsiveFontSizes(Theme)
-
-export default responsiveTheme
+export default responsiveFontSizes(theme)

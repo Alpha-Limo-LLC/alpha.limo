@@ -2,28 +2,21 @@ import { openai } from '@ai-sdk/openai'
 import { smoothStream, streamText } from 'ai'
 import config from './config'
 
-async function OpenAI() {
+async function generateAiText(): Promise<string> {
   try {
-    const CHATGPT_MODEL = openai(`${config.chatgpt_model}`)
-    const CHATGPT_SYSTEM = config.chatgpt_system
-    const CHATGPT_USER = config.chatgpt_user
-    const CHATGPT_TOKENS = config.chatgpt_tokens
-    const CHATGPT_TEMP = config.chatgpt_temp
-    const CHATGPT_PROMPT = config.chatgpt_prompt
-    const { text } = await streamText({
-      model: CHATGPT_MODEL,
-      maxOutputTokens: CHATGPT_TOKENS,
-      temperature: CHATGPT_TEMP,
-      system: CHATGPT_SYSTEM + CHATGPT_USER,
-      prompt: CHATGPT_PROMPT,
+    const { text } = streamText({
+      model: openai(config.chatgpt_model),
+      maxOutputTokens: config.chatgpt_tokens,
+      temperature: config.chatgpt_temp,
+      system: `${config.chatgpt_system}\n${config.chatgpt_user}`,
+      prompt: config.chatgpt_prompt,
       experimental_transform: smoothStream(),
     })
-    const CHATGPT: string = (await text).replace(/[“”"']/g, '')
-    return CHATGPT
+    return (await text).replace(/[“”*"']/g, '')
   } catch (error) {
-    console.error('Error generating slogan:', error)
+    console.error('Error generating ai:', error)
     throw error
   }
 }
 
-export default OpenAI
+export default generateAiText

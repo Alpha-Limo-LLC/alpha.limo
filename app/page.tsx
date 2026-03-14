@@ -2,24 +2,20 @@ import { Grow, Link, Typography } from '@mui/material'
 import { grey } from '@mui/material/colors'
 import Image from 'next/image'
 import Logo from '../public/assets/images/logo.svg'
-import OpenAI from './src/ai'
+import generateAiText from './src/ai'
 import config from './src/config'
 
 export const dynamic = 'force-dynamic'
-export const maxDuration = 15
+export const maxDuration = 30
 
-export default function Alpha() {
-  const ALPHA_FULL = config.site_name_full
-  const ALPHA_SHORT = config.site_name_short
-  const ALPHA_YEAR = config.site_year
-  const ALPHA_URL = config.site_url
-  const CHATGPT = OpenAI()
+export default async function Alpha() {
+  const openaiText = await generateAiText()
   return (
     <div>
       <main className="flex flex-col items-center w-full h-full my-50">
         <Image
           src={Logo}
-          alt={ALPHA_FULL}
+          alt={config.site_name_full}
           quality={100}
           preload={true}
           loading="eager"
@@ -27,12 +23,12 @@ export default function Alpha() {
           height={250}
         ></Image>
         <div className="flex text-center text-5xl font-extrabold mt-10">
-          <h1>{ALPHA_SHORT}</h1>
+          <h1>{config.site_name_short}</h1>
         </div>
         <div className="flex text-center mt-10">
           <Grow in={true} timeout="auto">
             <Typography variant="body1" gutterBottom color={grey[900]}>
-              &ldquo;{CHATGPT}&rdquo;
+              &ldquo;{openaiText}&rdquo;
             </Typography>
           </Grow>
         </div>
@@ -41,10 +37,10 @@ export default function Alpha() {
             underline="none"
             gutterBottom
             color={grey[900]}
-            href={ALPHA_URL}
+            href={config.site_url}
             target="_blank"
           >
-            &copy; {ALPHA_YEAR} {ALPHA_FULL}
+            &copy; {config.site_year} {config.site_name_full}
           </Link>
           &nbsp;&bull;&nbsp;
           <Link
