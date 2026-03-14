@@ -1,9 +1,8 @@
-'use client';
-import { grey } from '@mui/material/colors';
-import { createTheme, responsiveFontSizes } from '@mui/material';
+'use client'
+import { createTheme, responsiveFontSizes } from '@mui/material'
+import { grey } from '@mui/material/colors'
 
 export const Theme = createTheme({
-
   colorSchemes: {
     light: true,
     dark: false,
@@ -12,17 +11,17 @@ export const Theme = createTheme({
   palette: {
     mode: 'light',
     action: {
-        active: grey[900],
-        activatedOpacity: 1,
-        hover: grey[900],
-        hoverOpacity: 1,
-        focus: grey[900],
-        focusOpacity: 1,
-        selected: grey[900],
-        selectedOpacity: 1,
-        disabled: grey[900],
-        disabledBackground: grey[900],
-        disabledOpacity: 1,
+      active: grey[900],
+      activatedOpacity: 1,
+      hover: grey[900],
+      hoverOpacity: 1,
+      focus: grey[900],
+      focusOpacity: 1,
+      selected: grey[900],
+      selectedOpacity: 1,
+      disabled: grey[900],
+      disabledBackground: grey[900],
+      disabledOpacity: 1,
     },
     background: {
       default: grey[50],
@@ -34,8 +33,8 @@ export const Theme = createTheme({
   typography: {
     fontFamily: 'var(--font-noto-sans), var(--font-noto-sans-mono), sans-serif',
   },
-});
+})
 
-const responsiveTheme = responsiveFontSizes(Theme);
+const responsiveTheme = responsiveFontSizes(Theme)
 
-export default responsiveTheme;
+export default responsiveTheme

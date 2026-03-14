@@ -1,4 +1,4 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
   devIndicators: false,
@@ -13,7 +13,7 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-};
+}
 
 module.exports = {
   crossOrigin: 'anonymous',
@@ -22,4 +22,4 @@ module.exports = {
   },
 }
 
-export default nextConfig;
+export default nextConfig

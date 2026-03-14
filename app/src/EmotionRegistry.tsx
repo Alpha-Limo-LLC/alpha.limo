@@ -1,30 +1,31 @@
-'use client';
+'use client'
 
-import React, { useState } from 'react';
-import { useServerInsertedHTML } from 'next/navigation';
-import { CacheProvider } from '@emotion/react';
-import createEmotionCache from './createEmotionCache';
+import { CacheProvider } from '@emotion/react'
+import { useServerInsertedHTML } from 'next/navigation'
+import type React from 'react'
+import { useState } from 'react'
+import createEmotionCache from './createEmotionCache'
 
 const EmotionRegistry = ({ children }: { children: React.ReactNode }) => {
-  const [emotionCache] = useState(() => createEmotionCache());
+  const [emotionCache] = useState(() => createEmotionCache())
 
   useServerInsertedHTML(() => {
-    const styles = emotionCache.inserted;
-    if (Object.keys(styles).length === 0) return null;
+    const styles = emotionCache.inserted
+    if (Object.keys(styles).length === 0) return null
 
-    const emotionKey = `${emotionCache.key} ${Object.keys(styles).join(' ')}`;
+    const emotionKey = `${emotionCache.key} ${Object.keys(styles).join(' ')}`
 
     return (
       <style
         data-emotion={emotionKey}
         dangerouslySetInnerHTML={{ __html: Object.values(styles).join(' ') }}
       />
-    );
-  });
+    )
+  })
 
-  if (typeof window !== 'undefined') return <>{children}</>;
+  if (typeof window !== 'undefined') return <>{children}</>
 
-  return <CacheProvider value={emotionCache}>{children}</CacheProvider>;
-};
+  return <CacheProvider value={emotionCache}>{children}</CacheProvider>
+}
 
-export default EmotionRegistry;
+export default EmotionRegistry

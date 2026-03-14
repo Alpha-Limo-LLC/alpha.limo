@@ -8,7 +8,13 @@
     "lineWidth": 80,
     "attributePosition": "auto"
   },
-  "organizeImports": { "enabled": true },
+  "files": {
+    "includes": [
+      "./*.{json,mjs,ts}",
+      "./app/*.{ts,tsx}",
+      "./app/src/*.{ts,tsx}"
+    ]
+  },
   "linter": { "enabled": true, "rules": { "recommended": true } },
   "javascript": {
     "formatter": {
@@ -23,11 +29,23 @@
       "attributePosition": "auto"
     }
   },
+  "json": {
+    "parser": {
+      "allowComments": true,
+      "allowTrailingCommas": true
+    }
+  },
   "overrides": [
     {
-      "include": ["*.json"],
       "formatter": {
         "indentWidth": 2
+      },
+      "assist": {
+        "actions": {
+          "source": {
+            "organizeImports": "off"
+          }
+        }
       }
     }
   ]
