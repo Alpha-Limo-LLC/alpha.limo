@@ -1,4 +1,4 @@
-import { Grow, Link, Typography } from '@mui/material'
+import { Grow, Link, Stack, Typography } from '@mui/material'
 import { grey } from '@mui/material/colors'
 import Image from 'next/image'
 import Logo from '../public/assets/images/logo.svg'
@@ -13,34 +13,44 @@ export default async function Alpha() {
   return (
     <div>
       <main className="flex flex-col items-center w-full h-full my-50">
-        <Image
-          src={Logo}
-          alt={config.site_name_full}
-          quality={100}
-          preload={true}
-          loading="eager"
-          width={250}
-          height={250}
-        ></Image>
-        <div className="flex text-center text-5xl font-extrabold mt-10">
-          <h1>{config.site_name_short}</h1>
+        <Stack>
+          <Image
+            src={Logo}
+            alt={config.site_name_full}
+            quality={100}
+            preload={true}
+            loading="eager"
+            width={250}
+            height={250}
+          ></Image>
+        </Stack>
+        <div className="flex text-center mt-10">
+          <Stack>
+            <Typography variant="h3" color={grey[900]}>
+              {config.site_name_short}
+            </Typography>
+          </Stack>
         </div>
         <div className="flex text-center mt-10">
-          <Grow in={true} timeout="auto">
-            <Typography variant="body1" color={grey[900]}>
-              &ldquo;{openaiText}&rdquo;
-            </Typography>
-          </Grow>
+          <Stack>
+            <Grow in={true} timeout="auto">
+              <Typography variant="body1" color={grey[900]}>
+                &ldquo;{openaiText}&rdquo;
+              </Typography>
+            </Grow>
+          </Stack>
         </div>
         <div className="flex text-center text-sm mt-10">
-          <Link
-            underline="none"
-            color={grey[900]}
-            href={config.site_url}
-            target="_blank"
-          >
-            &copy; {config.site_year} {config.site_name_full}
-          </Link>
+          <Stack>
+            <Link
+              underline="none"
+              color={grey[900]}
+              href={config.site_url}
+              target="_blank"
+            >
+              &copy; {config.site_year} {config.site_name_full}
+            </Link>
+          </Stack>
         </div>
       </main>
     </div>

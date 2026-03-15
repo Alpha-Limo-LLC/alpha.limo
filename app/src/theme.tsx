@@ -48,7 +48,6 @@ const theme = createTheme({
         variantMapping: {
           h3: 'h3',
           body1: 'div',
-          body2: 'div',
         },
       },
     },
