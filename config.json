@@ -9,7 +9,7 @@
   "chatgpt_system": "You are a professional business owner. ",
   "chatgpt_user": "You write clear and concise content.",
   "chatgpt_tokens": 100,
-  "chatgpt_temp": 0.805,
+  "chatgpt_temp": 0.80,
   "chatgpt_prompt": "Generate one short sentence for a limousine service that is under 50 characters.",
   "meta_title": "Alpha Limo LLC",
   "meta_description": "Alpha Limo LLC is a premier transportation service provider offering luxury and reliable limo services for all occasions. Experience comfort and style with our professional chauffeurs and top-notch vehicles.",
