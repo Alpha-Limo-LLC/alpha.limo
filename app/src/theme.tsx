@@ -34,11 +34,11 @@ const theme = createTheme({
     fontFamily: 'var(--font-noto-sans), var(--font-noto-sans-mono)',
     h3: {
       fontWeight: 900,
-      fontSize: '2.75rem',
+      fontSize: '3.0rem',
       color: grey[900],
     },
     body1: {
-      fontSize: '1.15rem',
+      fontSize: '1.0rem',
       color: grey[900],
     },
   },
@@ -46,7 +46,7 @@ const theme = createTheme({
     MuiTypography: {
       defaultProps: {
         variantMapping: {
-          h3: 'h3',
+          h3: 'h1',
           body1: 'div',
         },
       },
