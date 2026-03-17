@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@ai-sdk/openai':
         specifier: ^3.0.43
-        version: 3.0.45(zod@4.3.6)
+        version: 3.0.46(zod@4.3.6)
       '@emotion/react':
         specifier: ^11.14.0
         version: 11.14.0(@types/react@19.2.14)(react@19.2.4)
@@ -93,8 +93,8 @@ packages:
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
 
-  '@ai-sdk/openai@3.0.45':
-    resolution: {integrity: sha512-bHOw3E73pxo4D/dZUXk7zwmlofq2nURYlK1dSAy/CI+t6btVhr/BXbElAR7yst6P8Ukqy5GfFlFfsru5p6YSig==}
+  '@ai-sdk/openai@3.0.46':
+    resolution: {integrity: sha512-8grBb4sAMU0MAC6uOOD/wP/+SyX/3MMS/Lf+ToGgeUzoF9oWU9dWBLkvgjXpn7Ro81bPDeycW2GCCT63V/Vnvg==}
     engines: {node: '>=18'}
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
@@ -1469,7 +1469,7 @@ snapshots:
       '@vercel/oidc': 3.1.0
       zod: 4.3.6
 
-  '@ai-sdk/openai@3.0.45(zod@4.3.6)':
+  '@ai-sdk/openai@3.0.46(zod@4.3.6)':
     dependencies:
       '@ai-sdk/provider': 3.0.8
       '@ai-sdk/provider-utils': 4.0.20(zod@4.3.6)
