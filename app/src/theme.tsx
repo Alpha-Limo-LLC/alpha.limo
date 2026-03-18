@@ -34,11 +34,11 @@ const theme = createTheme({
     fontFamily: 'var(--font-noto-sans), var(--font-noto-sans-mono)',
     h3: {
       fontWeight: 900,
-      fontSize: '3.0rem',
+      fontSize: '3rem',
       color: grey[900],
     },
     body1: {
-      fontSize: '1.0rem',
+      fontSize: '1rem',
       color: grey[900],
     },
   },
