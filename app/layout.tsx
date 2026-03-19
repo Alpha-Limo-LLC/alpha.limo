@@ -3,7 +3,7 @@ import { SpeedInsights } from '@vercel/speed-insights/next'
 import type { Metadata } from 'next'
 import ClientProviders from './src/ClientProviders'
 import config from './src/config'
-import { notoMono, notoSans } from './src/fonts'
+import { geistMono, geistSans } from './src/fonts'
 import './globals.css'
 import './src/styles.css'
 
@@ -71,7 +71,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${notoSans.variable} ${notoMono.variable} antialiased`}>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         <ClientProviders>{children}</ClientProviders>
         <SpeedInsights />
         <Analytics />
