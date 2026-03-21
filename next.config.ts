@@ -1,7 +1,6 @@
 import type { NextConfig } from 'next'
 
 const nextConfig: NextConfig = {
-  devIndicators: false,
   cacheComponents: false,
   compress: true,
   reactStrictMode: false,
@@ -18,6 +17,7 @@ const nextConfig: NextConfig = {
 module.exports = {
   allowedDevOrigins: ['127.0.0.1'],
   crossOrigin: 'anonymous',
+  devIndicators: false,
   images: {
     qualities: [100, 75, 50, 25],
   },
