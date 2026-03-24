@@ -5,7 +5,7 @@ import { grey } from '@mui/material/colors'
 
 export default function NotFound() {
   return (
-    <div className="flex flex-col items-center w-full h-full z-10 my-75">
+    <div className="flex flex-col items-center w-full h-full my-75">
       <div className="flex text-center">
         <Stack>
           <Typography variant="h3" color={grey[900]}>
