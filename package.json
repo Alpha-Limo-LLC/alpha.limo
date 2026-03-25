@@ -1,6 +1,6 @@
 {
-  "name": "alpha.limo",
-  "version": "2.1.1",
+  "name": "www.alpha.limo",
+  "version": "3.0.1",
   "private": true,
   "scripts": {
     "dev": "next dev",
