@@ -3,6 +3,7 @@ import { grey } from '@mui/material/colors'
 import Image from 'next/image'
 import Logo from '../public/assets/images/logo.svg'
 import generateAiText from './src/ai'
+import AnimatedQuote from './src/AnimatedQuote'
 import config from './src/config'
 
 export const dynamic = 'force-dynamic'
@@ -33,9 +34,7 @@ export default async function Alpha() {
         </div>
         <div className="flex text-center mt-10">
           <Stack>
-            <Typography variant="body1" color={grey[900]}>
-              &ldquo;{openaiText}&rdquo;
-            </Typography>
+            <AnimatedQuote text={openaiText} />
           </Stack>
         </div>
         <div className="flex text-center text-sm mt-10">
