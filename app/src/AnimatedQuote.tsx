@@ -12,7 +12,7 @@ export default function AnimatedQuote({ text }: { text: string }) {
   }, [])
 
   return (
-    <Grow in={visible} timeout="auto">
+    <Grow in={visible} timeout={1000}>
       <Typography variant="body1" color={grey[900]}>
         &ldquo;{text}&rdquo;
       </Typography>
