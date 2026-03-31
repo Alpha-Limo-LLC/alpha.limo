@@ -2,7 +2,7 @@ import { openai } from '@ai-sdk/openai'
 import { smoothStream, streamText } from 'ai'
 import config from './config'
 
-async function generateAiText(): Promise<string> {
+async function OpenAiText(): Promise<string> {
   try {
     const { text } = streamText({
       model: openai(config.chatgpt_model),
@@ -19,4 +19,4 @@ async function generateAiText(): Promise<string> {
   }
 }
 
-export default generateAiText
+export default OpenAiText

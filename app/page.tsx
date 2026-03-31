@@ -2,7 +2,7 @@ import { Link, Stack, Typography } from '@mui/material'
 import { grey } from '@mui/material/colors'
 import Image from 'next/image'
 import Logo from '../public/assets/images/logo.svg'
-import generateAiText from './src/ai'
+import OpenAiText from './src/ai'
 import AnimatedQuote from './src/AnimatedQuote'
 import config from './src/config'
 
@@ -10,7 +10,7 @@ export const dynamic = 'force-dynamic'
 export const maxDuration = 30
 
 export default async function Alpha() {
-  const openaiText = await generateAiText()
+  const quoteText = await OpenAiText()
   return (
     <div>
       <main className="flex flex-col items-center w-full h-full my-50">
@@ -34,7 +34,7 @@ export default async function Alpha() {
         </div>
         <div className="flex text-center mt-10">
           <Stack>
-            <AnimatedQuote text={openaiText} />
+            <AnimatedQuote text={quoteText} />
           </Stack>
         </div>
         <div className="flex text-center text-sm mt-10">
