@@ -1,4 +1,4 @@
-import { Grow, Link, Stack, Typography } from '@mui/material'
+import { Link, Stack, Typography } from '@mui/material'
 import { grey } from '@mui/material/colors'
 import Image from 'next/image'
 import Logo from '../public/assets/images/logo.svg'
@@ -33,11 +33,9 @@ export default async function Alpha() {
         </div>
         <div className="flex text-center mt-10">
           <Stack>
-            <Grow in={true} timeout="auto">
-              <Typography variant="body1" color={grey[900]}>
-                &ldquo;{openaiText}&rdquo;
-              </Typography>
-            </Grow>
+            <Typography variant="body1" color={grey[900]}>
+              &ldquo;{openaiText}&rdquo;
+            </Typography>
           </Stack>
         </div>
         <div className="flex text-center text-sm mt-10">
