@@ -35,10 +35,13 @@ const theme = createTheme({
     h3: {
       fontWeight: 900,
       fontSize: '3rem',
+      fontStyle: 'normal',
       color: grey[900],
     },
     body1: {
+      fontWeight: 'normal',
       fontSize: '1rem',
+      fontStyle: 'italic',
       color: grey[900],
     },
   },
