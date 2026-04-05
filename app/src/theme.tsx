@@ -34,14 +34,14 @@ const theme = createTheme({
     fontFamily: 'var(--font-geist-sans), var(--font-geist-mono)',
     h3: {
       fontWeight: 900,
-      fontSize: '3rem',
+      fontSize: '3.5rem',
       fontStyle: 'normal',
       color: grey[900],
     },
     body1: {
       fontWeight: 'normal',
       fontSize: '1rem',
-      fontStyle: 'italic',
+      fontStyle: 'normal',
       color: grey[900],
     },
   },

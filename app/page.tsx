@@ -32,12 +32,12 @@ export default async function Alpha() {
             </Typography>
           </Stack>
         </div>
-        <div className="flex text-center mt-10">
+        <div className="flex text-center mt-5">
           <Stack>
             <AnimatedQuote text={quoteText} />
           </Stack>
         </div>
-        <div className="flex text-center text-sm mt-10">
+        <div className="flex text-center mt-5">
           <Stack>
             <Link
               underline="none"
