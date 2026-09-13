@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@ai-sdk/openai':
-        specifier: ^4.0.60
-        version: 4.0.66(zod@4.6.4)
+        specifier: ^4.0.66
+        version: 4.0.66(zod@4.6.2)
       '@emotion/react':
         specifier: ^11.14.0
         version: 11.14.0(@types/react@19.3.0)(react@19.3.0)
@@ -33,19 +33,19 @@ importers:
         specifier: ^2.0.0
         version: 2.0.0(next@16.3.5(@types/node@26.5.1)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0))(react@19.3.0)
       ai:
-        specifier: ^7.0.93
-        version: 7.0.99(zod@4.6.4)
+        specifier: ^7.0.99
+        version: 7.0.99(zod@4.6.2)
       global:
         specifier: ^4.4.0
         version: 4.4.0
       next:
-        specifier: ^16.3.4
+        specifier: ^16.3.5
         version: 16.3.5(@types/node@26.5.1)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
       react:
-        specifier: ^19.2.8
+        specifier: ^19.3.0
         version: 19.3.0
       react-dom:
-        specifier: ^19.2.8
+        specifier: ^19.3.0
         version: 19.3.0(react@19.3.0)
       stylis:
         specifier: ^4.4.0
@@ -54,11 +54,11 @@ importers:
         specifier: ^4.23.13
         version: 4.23.13
       zod:
-        specifier: ^4.5.4
-        version: 4.6.4
+        specifier: ^4.6.2
+        version: 4.6.2
     devDependencies:
       '@biomejs/biome':
-        specifier: ^2.5.12
+        specifier: ^2.5.13
         version: 2.5.13
       '@tailwindcss/cli':
         specifier: ^4.3.3
@@ -67,13 +67,13 @@ importers:
         specifier: ^4.3.3
         version: 4.3.3
       '@types/node':
-        specifier: ^26.5.0
+        specifier: ^26.5.1
         version: 26.5.1
       '@types/react':
-        specifier: ^19.2.18
+        specifier: ^19.3.0
         version: 19.3.0
       '@types/react-dom':
-        specifier: ^19.2.7
+        specifier: ^19.3.0
         version: 19.3.0(@types/react@19.3.0)
       '@types/stylis':
         specifier: ^4.2.7
@@ -1060,8 +1060,8 @@ packages:
     resolution: {integrity: sha512-Cg7TFGpIr01vOQNODXOOaGz2NpCU5gl8x1qJFbb6hbZxR7XrcE2vtbAsTAbJ7/xwJtUuJEw8K8Zr/AE0LHlesg==}
     engines: {node: '>=10', npm: '>=6'}
 
-  baseline-browser-mapping@2.11.21:
-    resolution: {integrity: sha512-uh8vpY/1/YyFkunIDFH/12p7/7VdPKA1hejMVEbdkEaWnUz0Hesvx5EbiU6XxjyHZIOju+ZMbQJkRh+es3/spQ==}
+  baseline-browser-mapping@2.11.23:
+    resolution: {integrity: sha512-le521dGVfxM7yRX0EikCoSz+rOK+hHzdDt/E7mG1jOJB/6WAAUuwVroLwaB7ApaUsz5Q0kFlDXLSA9MheUIfRQ==}
     engines: {node: '>=6.0.0'}
     hasBin: true
 
@@ -1117,8 +1117,8 @@ packages:
   dom-walk@0.1.2:
     resolution: {integrity: sha512-6QvTW9mrGeIegrFXdtQi9pk7O/nSK6lSdXW2eqUspN5LWD7UTji2Fqw5V2YLjBpHEoU9Xl/eUWNpDeZvoyOv2w==}
 
-  enhanced-resolve@5.24.5:
-    resolution: {integrity: sha512-L1l8TNvomm6UVW5B253AGxQagSQr+vGwhMlrrfRS2qmhx46AMpMVJKQYLvWYbysTMY8VoicOvzHzoHMbyzB+4A==}
+  enhanced-resolve@5.25.0:
+    resolution: {integrity: sha512-ghq3mhs649mvbarTCAlZn2wRhbfHmzAFiKxoWA14B3VtqnxtZt+wz8BroKXU0tF3GiJsnUldjVncQGZ8qk4rdA==}
     engines: {node: '>=10.13.0'}
 
   error-ex@1.3.4:
@@ -1308,8 +1308,8 @@ packages:
   ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
 
-  nanoid@3.3.18:
-    resolution: {integrity: sha512-DTg4MJbGMWkfi6VZFdNt2/caMbQy4Ou+Op/hJQvGEWcnVfoA1QA+xzRKAzw9jD6+GVOOeYr/mIcuDSdug6F6+w==}
+  nanoid@3.3.19:
+    resolution: {integrity: sha512-Y2tUNy4ouw6tq5oDSKeQYGOyhkUBhNOcGV/02KC+6kd9eDGqdZd++mjMiIDilrBYvjEnCYvVtsuHCuP+okSfug==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
@@ -1386,8 +1386,8 @@ packages:
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
-  react-is@19.2.8:
-    resolution: {integrity: sha512-s5un28nYxKJw5gvUHyW5PCC28CvBqLu9r3cWgzHT4Vo/5fqqkFcdRYsGcKf50WMPpjjFZS5d76fn3YCo2njKwQ==}
+  react-is@19.3.0:
+    resolution: {integrity: sha512-UpMYezM4v5/18F28aC66AEsjXIgE02kyEMH6yLdgLXu/UTfa1Ntwck/nNLrbqJsEXW7gPb0coNO9FQse9WTovA==}
 
   react-transition-group@4.4.5:
     resolution: {integrity: sha512-pZcd1MCJoiKiBR2NRxeCRg13uCXbydPnmB4EOeRrY7480qNWO8IIgQG6zlDkm6uRMsURXPuKq0GWtiM59a5Q6g==}
@@ -1491,32 +1491,32 @@ packages:
     resolution: {integrity: sha512-vIYeF1u3CjlhAFekPPAk2h/Kv4T3mAkMox5OymRiJQB0spDP10LHvt+K7G9Ny6NuuMAb25/6n1qyUjAcGNf/AA==}
     engines: {node: '>= 6'}
 
-  zod@4.6.4:
-    resolution: {integrity: sha512-AXSD6hvGdvRjajG/l1cC+d6IrhH+sjmPKtYeQdJIK8MFJl3LyClzS+o/YsVC+zQZPupAaeH5skwwm8YqYH7BqA==}
+  zod@4.6.2:
+    resolution: {integrity: sha512-lh5RCAGFa1Cm2hjtNwLQhSs/AsqdWnTQaBER9fEwN/88pSh7KOtJavtBx/0VlkN/uFd61SwYmljLMDAsHlvzBQ==}
 
 snapshots:
 
-  '@ai-sdk/gateway@4.0.80(zod@4.6.4)':
+  '@ai-sdk/gateway@4.0.80(zod@4.6.2)':
     dependencies:
       '@ai-sdk/provider': 4.0.14
-      '@ai-sdk/provider-utils': 5.0.40(zod@4.6.4)
+      '@ai-sdk/provider-utils': 5.0.40(zod@4.6.2)
       '@vercel/oidc': 3.2.0
-      zod: 4.6.4
+      zod: 4.6.2
 
-  '@ai-sdk/openai@4.0.66(zod@4.6.4)':
+  '@ai-sdk/openai@4.0.66(zod@4.6.2)':
     dependencies:
       '@ai-sdk/provider': 4.0.14
-      '@ai-sdk/provider-utils': 5.0.40(zod@4.6.4)
-      zod: 4.6.4
+      '@ai-sdk/provider-utils': 5.0.40(zod@4.6.2)
+      zod: 4.6.2
 
-  '@ai-sdk/provider-utils@5.0.40(zod@4.6.4)':
+  '@ai-sdk/provider-utils@5.0.40(zod@4.6.2)':
     dependencies:
       '@ai-sdk/provider': 4.0.14
       '@standard-schema/spec': 1.1.0
       '@workflow/serde': 4.1.0
       eventsource-parser: 3.1.1
       undici: 7.29.1
-      zod: 4.6.4
+      zod: 4.6.2
 
   '@ai-sdk/provider@4.0.14':
     dependencies:
@@ -1941,7 +1941,7 @@ snapshots:
       prop-types: 15.8.1
       react: 19.3.0
       react-dom: 19.3.0(react@19.3.0)
-      react-is: 19.2.8
+      react-is: 19.3.0
       react-transition-group: 4.4.5(react-dom@19.3.0(react@19.3.0))(react@19.3.0)
     optionalDependencies:
       '@emotion/react': 11.14.0(@types/react@19.3.0)(react@19.3.0)
@@ -2000,7 +2000,7 @@ snapshots:
       clsx: 2.1.1
       prop-types: 15.8.1
       react: 19.3.0
-      react-is: 19.2.8
+      react-is: 19.3.0
     optionalDependencies:
       '@types/react': 19.3.0
 
@@ -2103,7 +2103,7 @@ snapshots:
       '@parcel/watcher': 2.5.1
       '@tailwindcss/node': 4.3.3
       '@tailwindcss/oxide': 4.3.3
-      enhanced-resolve: 5.24.5
+      enhanced-resolve: 5.25.0
       mri: 1.2.0
       picocolors: 1.1.1
       tailwindcss: 4.3.3
@@ -2111,7 +2111,7 @@ snapshots:
   '@tailwindcss/node@4.3.3':
     dependencies:
       '@jridgewell/remapping': 2.3.5
-      enhanced-resolve: 5.24.5
+      enhanced-resolve: 5.25.0
       jiti: 2.7.0
       lightningcss: 1.32.0
       magic-string: 0.30.21
@@ -2213,12 +2213,12 @@ snapshots:
 
   '@workflow/serde@4.1.0': {}
 
-  ai@7.0.99(zod@4.6.4):
+  ai@7.0.99(zod@4.6.2):
     dependencies:
-      '@ai-sdk/gateway': 4.0.80(zod@4.6.4)
+      '@ai-sdk/gateway': 4.0.80(zod@4.6.2)
       '@ai-sdk/provider': 4.0.14
-      '@ai-sdk/provider-utils': 5.0.40(zod@4.6.4)
-      zod: 4.6.4
+      '@ai-sdk/provider-utils': 5.0.40(zod@4.6.2)
+      zod: 4.6.2
 
   babel-plugin-macros@3.1.0:
     dependencies:
@@ -2226,7 +2226,7 @@ snapshots:
       cosmiconfig: 7.1.0
       resolve: 1.22.12
 
-  baseline-browser-mapping@2.11.21: {}
+  baseline-browser-mapping@2.11.23: {}
 
   braces@3.0.3:
     dependencies:
@@ -2267,7 +2267,7 @@ snapshots:
 
   dom-walk@0.1.2: {}
 
-  enhanced-resolve@5.24.5:
+  enhanced-resolve@5.25.0:
     dependencies:
       graceful-fs: 4.2.11
       tapable: 2.3.3
@@ -2438,13 +2438,13 @@ snapshots:
 
   ms@2.1.3: {}
 
-  nanoid@3.3.18: {}
+  nanoid@3.3.19: {}
 
   next@16.3.5(@types/node@26.5.1)(babel-plugin-macros@3.1.0)(react-dom@19.3.0(react@19.3.0))(react@19.3.0):
     dependencies:
       '@next/env': 16.3.5
       '@swc/helpers': 0.5.23
-      baseline-browser-mapping: 2.11.21
+      baseline-browser-mapping: 2.11.23
       caniuse-lite: 1.0.30001810
       postcss: 8.5.23
       react: 19.3.0
@@ -2490,13 +2490,13 @@ snapshots:
 
   postcss@8.5.23:
     dependencies:
-      nanoid: 3.3.18
+      nanoid: 3.3.19
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
   postcss@8.5.28:
     dependencies:
-      nanoid: 3.3.18
+      nanoid: 3.3.19
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
@@ -2515,7 +2515,7 @@ snapshots:
 
   react-is@16.13.1: {}
 
-  react-is@19.2.8: {}
+  react-is@19.3.0: {}
 
   react-transition-group@4.4.5(react-dom@19.3.0(react@19.3.0))(react@19.3.0):
     dependencies:
@@ -2617,4 +2617,4 @@ snapshots:
 
   yaml@1.10.3: {}
 
-  zod@4.6.4: {}
+  zod@4.6.2: {}
