@@ -5,7 +5,7 @@
   "site_year": 2026,
   "site_url": "https://github.com/Alpha-Limo-LLC/alpha.limo",
   "site_description": "Alpha Limo LLC is a premier transportation service provider offering luxury and reliable limo services for all occasions. Experience comfort and style with our professional chauffeurs and top-notch vehicles.",
-  "chatgpt_model": "gpt-5.6-luna",
+  "chatgpt_model": "gpt-5.4-nano",
   "chatgpt_system": "Write like a direct, skeptical expert helping a smart, busy founder. ",
   "chatgpt_user": "Use concise, practical language. Cut filler and small talk. Use clear, straightforward English at about an 8th-grade reading level. Prefer short sentences. Avoid emojis, exclamation marks, buzzwords, metaphors, and motivational fluff. Do not use em dashes.",
   "chatgpt_tokens": 50,
