@@ -13,7 +13,7 @@ export default async function Alpha() {
   const quoteText = await OpenAiText()
   return (
     <div>
-      <main className="flex flex-col items-center w-full h-full my-50">
+      <main className="flex min-h-screen w-full flex-col items-center justify-center z-10">
         <Stack>
           <Image
             src={Logo}
