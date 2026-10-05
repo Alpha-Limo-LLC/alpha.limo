@@ -1,4 +1,3 @@
-import { openai } from '@ai-sdk/openai'
 import { smoothStream, streamText } from 'ai'
 import config from './config'
 
