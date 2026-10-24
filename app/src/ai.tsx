@@ -5,8 +5,6 @@ async function OpenAiText(): Promise<string> {
   try {
     const { text } = streamText({
       model: config.chatgpt_model,
-      maxOutputTokens: config.chatgpt_tokens,
-      temperature: config.chatgpt_temp,
       system: `${config.chatgpt_system}\n${config.chatgpt_user}`,
       prompt: config.chatgpt_prompt,
       experimental_transform: smoothStream(),
