@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@ai-sdk/openai':
         specifier: ^4.0.101
-        version: 4.0.102(zod@4.6.7)
+        version: 4.0.103(zod@4.6.7)
       '@emotion/react':
         specifier: ^11.14.0
         version: 11.14.0(@types/react@19.3.0)(react@19.3.1)
@@ -93,14 +93,20 @@ packages:
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
 
-  '@ai-sdk/openai@4.0.102':
-    resolution: {integrity: sha512-8hvs5UO6OgGSR0HASptyopqoJYgdCccVfksUlBLeJ8/h2KoKYU2ZiFjArOkS6ciJbmnDz3G+Zoo4KiI4rlQSoA==}
+  '@ai-sdk/openai@4.0.103':
+    resolution: {integrity: sha512-ZaMITn2RBzILNzrpXxJDMPRpNHGwZdq77GWqd9UBuz5VAA8EOu9JPy8hTk5OVhPMzDZbNgpb/D/1G+NbeVP22w==}
     engines: {node: '>=22'}
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
 
   '@ai-sdk/provider-utils@5.0.68':
     resolution: {integrity: sha512-SASuC1DqSdWoYyYfpxbgPKm9VCnMP1VTahWY7WEYzi2QDmFdbw4runqmH7NKC33iB/INo+XbaN2hH3dXHSNQZw==}
+    engines: {node: '>=22'}
+    peerDependencies:
+      zod: ^3.25.76 || ^4.1.8
+
+  '@ai-sdk/provider-utils@5.0.69':
+    resolution: {integrity: sha512-oGCXIoBKLpNrrAzJvltFHdBl20FJMyT+7edD9D4nwxoI8Scbj3y1EgKzjoF2XFhNYkMTcv1oTFDgUzLxdjqSKg==}
     engines: {node: '>=22'}
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
@@ -1518,13 +1524,22 @@ snapshots:
       '@vercel/oidc': 3.2.0
       zod: 4.6.7
 
-  '@ai-sdk/openai@4.0.102(zod@4.6.7)':
+  '@ai-sdk/openai@4.0.103(zod@4.6.7)':
     dependencies:
       '@ai-sdk/provider': 4.0.34
-      '@ai-sdk/provider-utils': 5.0.68(zod@4.6.7)
+      '@ai-sdk/provider-utils': 5.0.69(zod@4.6.7)
       zod: 4.6.7
 
   '@ai-sdk/provider-utils@5.0.68(zod@4.6.7)':
+    dependencies:
+      '@ai-sdk/provider': 4.0.34
+      '@standard-schema/spec': 1.1.0
+      '@workflow/serde': 4.1.0
+      eventsource-parser: 3.1.1
+      undici: 7.30.1
+      zod: 4.6.7
+
+  '@ai-sdk/provider-utils@5.0.69(zod@4.6.7)':
     dependencies:
       '@ai-sdk/provider': 4.0.34
       '@standard-schema/spec': 1.1.0
