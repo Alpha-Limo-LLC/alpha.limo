@@ -9,11 +9,7 @@ importers:
   .:
     dependencies:
       '@ai-sdk/openai':
-<<<<<<< HEAD
         specifier: ^4.0.118
-=======
-        specifier: ^4.0.109
->>>>>>> 191f77b64365d80fbbfcc4f894555ef22211d808
         version: 4.0.118(zod@4.6.7)
       '@emotion/react':
         specifier: ^11.14.0
@@ -37,22 +33,13 @@ importers:
         specifier: ^2.1.0
         version: 2.1.0(next@16.4.6(@types/node@26.6.6)(babel-plugin-macros@3.1.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react@19.3.1)
       ai:
-<<<<<<< HEAD
         specifier: ^7.0.173
         version: 7.0.173(zod@4.6.7)
-=======
-        specifier: ^7.0.163
-        version: 7.0.166(zod@4.6.7)
->>>>>>> 191f77b64365d80fbbfcc4f894555ef22211d808
       global:
         specifier: ^4.4.0
         version: 4.4.0
       next:
-<<<<<<< HEAD
         specifier: ^16.4.6
-=======
-        specifier: ^16.4.5
->>>>>>> 191f77b64365d80fbbfcc4f894555ef22211d808
         version: 16.4.6(@types/node@26.6.6)(babel-plugin-macros@3.1.0)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       react:
         specifier: ^19.3.1
@@ -71,7 +58,6 @@ importers:
         version: 4.6.7
     devDependencies:
       '@biomejs/biome':
-<<<<<<< HEAD
         specifier: ^2.6.8
         version: 2.6.8
       '@tailwindcss/cli':
@@ -79,15 +65,6 @@ importers:
         version: 4.3.5
       '@tailwindcss/postcss':
         specifier: ^4.3.5
-=======
-        specifier: ^2.6.5
-        version: 2.6.8
-      '@tailwindcss/cli':
-        specifier: ^4.3.4
-        version: 4.3.5
-      '@tailwindcss/postcss':
-        specifier: ^4.3.4
->>>>>>> 191f77b64365d80fbbfcc4f894555ef22211d808
         version: 4.3.5
       '@types/node':
         specifier: ^26.6.6
@@ -110,13 +87,8 @@ importers:
 
 packages:
 
-<<<<<<< HEAD
   '@ai-sdk/gateway@4.0.146':
     resolution: {integrity: sha512-rJ5NQSyjnpo6HSBEYc9Ff6k1EROUuB7KeAfHYVbVDsk68ynY0Eb8JeWflZKXlT6NhYgqyCiBDxE5blXWACXMKQ==}
-=======
-  '@ai-sdk/gateway@4.0.139':
-    resolution: {integrity: sha512-2YEIPm4n59nm4PBhMGjFWH0g+ztPgfybqoeMIjfJYNiB8zLHftUrONgb8P3Ho3Yy5cdoLCjiDE/Hv2Crol0JBw==}
->>>>>>> 191f77b64365d80fbbfcc4f894555ef22211d808
     engines: {node: '>=22'}
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
@@ -127,30 +99,12 @@ packages:
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
 
-<<<<<<< HEAD
-  '@ai-sdk/provider-utils@5.0.81':
-    resolution: {integrity: sha512-pfvvdQ3d1WxdBuug/mnGEP6E48cPokwD8dMBnsFeeAUp0/rb/H2aj0f3mwOiY62gu/Cu5GO44e+SE5nDHyBWMA==}
-=======
-  '@ai-sdk/provider-utils@5.0.76':
-    resolution: {integrity: sha512-76QcCmVtSunSAbQBJtgQTTE8e+Yaz4rJJe1MRWnJ3GAQYUvNPHJejKx4jZTbhGGTdSSLaYcMBT62SISNgnGq9w==}
->>>>>>> 191f77b64365d80fbbfcc4f894555ef22211d808
-    engines: {node: '>=22'}
-    peerDependencies:
-      zod: ^3.25.76 || ^4.1.8
-
-<<<<<<< HEAD
-=======
   '@ai-sdk/provider-utils@5.0.81':
     resolution: {integrity: sha512-pfvvdQ3d1WxdBuug/mnGEP6E48cPokwD8dMBnsFeeAUp0/rb/H2aj0f3mwOiY62gu/Cu5GO44e+SE5nDHyBWMA==}
     engines: {node: '>=22'}
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
 
-  '@ai-sdk/provider@4.0.37':
-    resolution: {integrity: sha512-4uPgZ3qiX/JaQFr0dQoibUzHImZit9u05ro2BxGUnJwU4fV28BOAbKUa2OjQvqtM1tMac3bTKkaXdyzGovQXqg==}
-    engines: {node: '>=22'}
-
->>>>>>> 191f77b64365d80fbbfcc4f894555ef22211d808
   '@ai-sdk/provider@4.0.38':
     resolution: {integrity: sha512-GElz70UUCuDFFyD6m6aQJFgRY0HEABQzB5otzgkrisYaF5mnss7o0upAmbBTSD6KWiM9h7lZm1ls2c7xzHR8CA==}
     engines: {node: '>=22'}
@@ -1104,13 +1058,8 @@ packages:
   '@workflow/serde@4.1.0':
     resolution: {integrity: sha512-pav4F2BoirECWR7Nf1TKt+2eETcBj7jj4cBefQ8VXQCA6NPkaKeLfj/zMgi+3zYV5ZIBT4GuUiphsj0/b9hPQQ==}
 
-<<<<<<< HEAD
   ai@7.0.173:
     resolution: {integrity: sha512-dLea37zT1h7cjkUsBprU4Rq35HJqhtHHaq1jTAXjHQoyfpeswpgCrhjZJWdWc10gjEAxmz114py7iLGQ3xIMxw==}
-=======
-  ai@7.0.166:
-    resolution: {integrity: sha512-bijt5WsdpQXQLB0SHYEoSuvpZ8KdUxl3Iz843uvHFcGpEBSrxlgwXXadR7EBVOHoByEf2PwgOxutWU5dcdjs9Q==}
->>>>>>> 191f77b64365d80fbbfcc4f894555ef22211d808
     engines: {node: '>=22'}
     peerDependencies:
       zod: ^3.25.76 || ^4.1.8
@@ -1497,16 +1446,8 @@ packages:
   tailwindcss@4.3.5:
     resolution: {integrity: sha512-FcQk9BuffmEHJP2G0XmB2SplU1aLTI7j07Kunk+U74Ny+XiWOtzXz9aujFZ/avntw1e2cOv/3PkgzflQ7gX2vQ==}
 
-<<<<<<< HEAD
   tapable@2.3.4:
     resolution: {integrity: sha512-NHFiWnAbMJxNNpBwiO7jJVGDuqMxT9/oV8v57RR+fgBQShkJil5inGD8/xWy0hjLyHQyX1tu27QANhlz3KBqCg==}
-=======
-  tailwindcss@4.3.5:
-    resolution: {integrity: sha512-FcQk9BuffmEHJP2G0XmB2SplU1aLTI7j07Kunk+U74Ny+XiWOtzXz9aujFZ/avntw1e2cOv/3PkgzflQ7gX2vQ==}
-
-  tapable@2.3.3:
-    resolution: {integrity: sha512-uxc/zpqFg6x7C8vOE7lh6Lbda8eEL9zmVm/PLeTPBRhh1xCgdWaQ+J1CUieGpIfm2HdtsUpRv+HshiasBMcc6A==}
->>>>>>> 191f77b64365d80fbbfcc4f894555ef22211d808
     engines: {node: '>=6'}
 
   tslib@2.9.1:
@@ -1534,17 +1475,10 @@ packages:
 
 snapshots:
 
-<<<<<<< HEAD
   '@ai-sdk/gateway@4.0.146(zod@4.6.7)':
     dependencies:
       '@ai-sdk/provider': 4.0.38
       '@ai-sdk/provider-utils': 5.0.81(zod@4.6.7)
-=======
-  '@ai-sdk/gateway@4.0.139(zod@4.6.7)':
-    dependencies:
-      '@ai-sdk/provider': 4.0.37
-      '@ai-sdk/provider-utils': 5.0.76(zod@4.6.7)
->>>>>>> 191f77b64365d80fbbfcc4f894555ef22211d808
       '@vercel/oidc': 3.2.0
       zod: 4.6.7
 
@@ -1554,22 +1488,6 @@ snapshots:
       '@ai-sdk/provider-utils': 5.0.81(zod@4.6.7)
       zod: 4.6.7
 
-<<<<<<< HEAD
-  '@ai-sdk/provider-utils@5.0.81(zod@4.6.7)':
-    dependencies:
-      '@ai-sdk/provider': 4.0.38
-=======
-  '@ai-sdk/provider-utils@5.0.76(zod@4.6.7)':
-    dependencies:
-      '@ai-sdk/provider': 4.0.37
->>>>>>> 191f77b64365d80fbbfcc4f894555ef22211d808
-      '@standard-schema/spec': 1.1.0
-      '@workflow/serde': 4.1.0
-      eventsource-parser: 3.1.1
-      zod: 4.6.7
-
-<<<<<<< HEAD
-=======
   '@ai-sdk/provider-utils@5.0.81(zod@4.6.7)':
     dependencies:
       '@ai-sdk/provider': 4.0.38
@@ -1578,11 +1496,6 @@ snapshots:
       eventsource-parser: 3.1.1
       zod: 4.6.7
 
-  '@ai-sdk/provider@4.0.37':
-    dependencies:
-      json-schema: 0.4.0
-
->>>>>>> 191f77b64365d80fbbfcc4f894555ef22211d808
   '@ai-sdk/provider@4.0.38':
     dependencies:
       json-schema: 0.4.0
@@ -2174,11 +2087,7 @@ snapshots:
       '@parcel/watcher': 2.6.0
       '@tailwindcss/node': 4.3.5
       '@tailwindcss/oxide': 4.3.5
-<<<<<<< HEAD
       enhanced-resolve: 5.27.0
-=======
-      enhanced-resolve: 5.26.1
->>>>>>> 191f77b64365d80fbbfcc4f894555ef22211d808
       mri: 1.2.0
       picocolors: 1.1.1
       tailwindcss: 4.3.5
@@ -2249,11 +2158,7 @@ snapshots:
       '@alloc/quick-lru': 5.3.0
       '@tailwindcss/node': 4.3.5
       '@tailwindcss/oxide': 4.3.5
-<<<<<<< HEAD
       postcss: 8.5.33
-=======
-      postcss: 8.5.32
->>>>>>> 191f77b64365d80fbbfcc4f894555ef22211d808
       tailwindcss: 4.3.5
 
   '@types/node@26.6.6':
@@ -2292,19 +2197,11 @@ snapshots:
 
   '@workflow/serde@4.1.0': {}
 
-<<<<<<< HEAD
   ai@7.0.173(zod@4.6.7):
     dependencies:
       '@ai-sdk/gateway': 4.0.146(zod@4.6.7)
       '@ai-sdk/provider': 4.0.38
       '@ai-sdk/provider-utils': 5.0.81(zod@4.6.7)
-=======
-  ai@7.0.166(zod@4.6.7):
-    dependencies:
-      '@ai-sdk/gateway': 4.0.139(zod@4.6.7)
-      '@ai-sdk/provider': 4.0.37
-      '@ai-sdk/provider-utils': 5.0.76(zod@4.6.7)
->>>>>>> 191f77b64365d80fbbfcc4f894555ef22211d808
       zod: 4.6.7
 
   babel-plugin-macros@3.1.0:
@@ -2665,13 +2562,7 @@ snapshots:
 
   tailwindcss@4.3.5: {}
 
-<<<<<<< HEAD
   tapable@2.3.4: {}
-=======
-  tailwindcss@4.3.5: {}
-
-  tapable@2.3.3: {}
->>>>>>> 191f77b64365d80fbbfcc4f894555ef22211d808
 
   tslib@2.9.1: {}
 
