@@ -2,3 +2,11 @@ allowBuilds:
   '@parcel/watcher': true
   esbuild: true
   sharp: true
+
+permissions:
+  ai:
+    skills: true
+
+skills:
+  dirs:
+    - .claude/skills
